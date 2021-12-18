@@ -1,0 +1,644 @@
+Call Walker V250
+RL78 (MUL/DIV/MAC instructions & double - 4 bytes)
+RL78 engine C/C++ Compiler Ver. 2
+322
+1	 	0	C_First.cal	0	0	4294967295	78	1	2	7	12	13	14	15	16	17	18	20	23	42	43	44	45	46	48	49	50	51	59	66	67	68	69	70	71	72	73	74	75	76	77	78	79	84	253	254	255	257	258	259	260	261	262	263	265	266	267	268	269	270	271	272	273	274	275	276	277	278	279	280	281	282	283	306	307	308	309	311	312	313	314	315	316	317	318
+1	0x00007f6f|vector.obj|knl_inthdr_entry27|4294967295	2	knl_inthdr_entry27	4294967295	0	0	0
+1	0x00007a8d|libtm_printf.obj|_out_cons@1|10	1	_out_cons@1	10	0	0	1	3
+1	0x000075ad|libtm.obj|_tm_putchar|8	1	_tm_putchar	8	0	2	3	4	5	6
+1	0x00007cf0|int_rl78s3.obj|_disint|4	1	_disint	4	0	3	0
+1	0x00007b26|tm_com.obj|_tm_snd_dat|6	1	_tm_snd_dat	6	0	3	0
+1	0x00007cfa|int_rl78s3.obj|_enaint|4	1	_enaint	4	0	3	0
+1	0x000028b8|eventflag.obj|_flg_chg_pri@1|6	1	_flg_chg_pri@1	6	0	0	1	8
+1	0x000073ac|wait.obj|_knl_gcb_change_priority|8	1	_knl_gcb_change_priority	8	0	7	2	9	10
+1	0x00007208|wait.obj|_QueRemove@1|4	1	_QueRemove@1	4	0	8	0
+1	0x0000721b|wait.obj|_knl_queue_insert_tpri@1|10	1	_knl_queue_insert_tpri@1	10	0	8	1	11
+1	0x000071ef|wait.obj|_QueInsert@1|10	1	_QueInsert@1	10	0	10	0
+1	0x00007f91|vector.obj|knl_inthdr_entry44|4294967295	2	knl_inthdr_entry44	4294967295	0	0	0
+1	0x00007ea2|dispatch.obj|_knl_systim_inthdr|4294967295	2	_knl_systim_inthdr	4294967295	0	0	0
+1	0x00007f49|vector.obj|knl_inthdr_entry8|4294967295	2	knl_inthdr_entry8	4294967295	0	0	0
+1	0x00007f85|vector.obj|knl_inthdr_entry38|4294967295	2	knl_inthdr_entry38	4294967295	0	0	0
+1	0x00007f8f|vector.obj|knl_inthdr_entry43|4294967295	2	knl_inthdr_entry43	4294967295	0	0	0
+1	0x00007f75|vector.obj|knl_inthdr_entry30|4294967295	2	knl_inthdr_entry30	4294967295	0	0	0
+1	0x0000754a|libtm.obj|_tm_getchar|8	1	_tm_getchar	8	0	0	3	4	19	6
+1	0x00007b45|tm_com.obj|_tm_rcv_dat|6	1	_tm_rcv_dat	6	0	18	0
+1	0x0000646a|timer.obj|_knl_timer_handler|12	1	_knl_timer_handler	12	0	0	4	4	321	22	6
+0	 	0	 	0	0	0	0
+1	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	2	_knl_dispatch_entry	4294967295	0	20	0
+1	0x00003ce3|mempool.obj|_mpl_rel_wai@1|4	1	_mpl_rel_wai@1	4	0	0	1	24
+1	0x00003cc1|mempool.obj|_mpl_chg_pri@1|8	1	_mpl_chg_pri@1	8	0	23	2	8	25
+1	0x00003a67|mempool.obj|_knl_mpl_wakeup|10	1	_knl_mpl_wakeup	10	0	24	4	26	27	28	36
+1	0x000038c5|mempool.obj|_isQueEmpty@1|4	1	_isQueEmpty@1	4	0	25	0
+1	0x00003907|mempool.obj|_knl_MaxFreeSize@1|6	1	_knl_MaxFreeSize@1	6	0	25	1	26
+1	0x000039ea|mempool.obj|_knl_get_blk@1|16	1	_knl_get_blk@1	16	0	25	5	29	30	32	33	35
+1	0x000030c7|memory.obj|_knl_searchFreeArea|10	1	_knl_searchFreeArea	10	0	28	0
+1	0x0000319a|memory.obj|_knl_removeFreeQue|8	1	_knl_removeFreeQue	8	0	28	1	31
+1	0x000030ae|memory.obj|_QueInsert@1|10	1	_QueInsert@1	10	0	30	0
+1	0x000031db|memory.obj|_knl_insertAreaQue|10	1	_knl_insertAreaQue	10	0	28	0
+1	0x00003950|mempool.obj|_knl_appendFreeAreaBound@1|16	1	_knl_appendFreeAreaBound@1	16	0	28	2	29	34
+1	0x000038d0|mempool.obj|_QueInsert@1|10	1	_QueInsert@1	10	0	33	0
+1	0x0000312f|memory.obj|_knl_appendFreeArea|14	1	_knl_appendFreeArea	14	0	28	2	29	31
+1	0x00007262|wait.obj|_knl_wait_release_ok|6	1	_knl_wait_release_ok	6	0	25	1	37
+1	0x00007251|wait.obj|_knl_wait_release@1|6	1	_knl_wait_release@1	6	0	36	2	9	38
+1	0x00007242|wait.obj|_knl_make_non_wait@1|4	1	_knl_make_non_wait@1	4	0	37	1	39
+1	0x0000572e|task.obj|_knl_make_ready|8	1	_knl_make_ready	8	0	38	1	40
+1	0x0000553b|task.obj|_knl_ready_queue_insert@1|14	1	_knl_ready_queue_insert@1	14	0	39	1	41
+1	0x00005512|task.obj|_QueInsert@1|10	1	_QueInsert@1	10	0	40	0
+1	0x00007f6d|vector.obj|knl_inthdr_entry26|4294967295	2	knl_inthdr_entry26	4294967295	0	0	0
+1	0x00007f69|vector.obj|knl_inthdr_entry24|4294967295	2	knl_inthdr_entry24	4294967295	0	0	0
+1	0x00007ed9|dispatch.obj|_knl_hll_inthdr|4294967295	2	_knl_hll_inthdr	4294967295	0	0	0
+1	0x00007489|string.obj|_knl_strlen|4	1	_knl_strlen	4	0	0	0
+1	0x00006de1|time_calls.obj|_knl_call_almhdr|6	1	_knl_call_almhdr	6	0	0	3	6	47	4
+1	0x00000000|time_calls.obj||4294967295	5	 	4294967295	0	46	0
+1	0x00007f45|vector.obj|knl_inthdr_entry6|4294967295	2	knl_inthdr_entry6	4294967295	0	0	0
+1	0x00007563|libtm.obj|_tm_getline|10	1	_tm_getline	10	0	0	4	4	19	5	6
+1	0x00007512|string.obj|_knl_strcat|10	1	_knl_strcat	10	0	0	0
+1	0x00004c05|mutex.obj|_mtx_chg_pri@1|14	1	_mtx_chg_pri@1	14	0	0	3	8	52	57
+1	0x00005762|task.obj|_knl_change_task_priority|10	1	_knl_change_task_priority	10	0	51	4	53	40	54	320
+1	0x00005590|task.obj|_knl_ready_queue_delete@1|12	1	_knl_ready_queue_delete@1	12	0	52	0
+1	0x00005661|task.obj|_knl_reschedule@1|4	1	_knl_reschedule@1	4	0	52	1	55
+1	0x0000552b|task.obj|_knl_ready_queue_top@1|4	1	_knl_ready_queue_top@1	4	0	54	0
+0	 	0	 	0	0	0	0
+1	0x0000490c|mutex.obj|_knl_release_mutex|14	1	_knl_release_mutex	14	0	51	2	58	52
+1	0x0000489e|mutex.obj|_isQueEmpty@1|4	1	_isQueEmpty@1	4	0	57	0
+1	0x00004381|messagebuf.obj|_mbf_rel_wai@1|4	1	_mbf_rel_wai@1	4	0	0	1	60
+1	0x0000435f|messagebuf.obj|_mbf_chg_pri@1|8	1	_mbf_chg_pri@1	8	0	59	2	8	61
+1	0x0000415a|messagebuf.obj|_knl_mbf_wakeup@1|10	1	_knl_mbf_wakeup@1	10	0	60	4	62	63	64	36
+1	0x0000403a|messagebuf.obj|_isQueEmpty@1|4	1	_isQueEmpty@1	4	0	61	0
+1	0x0000406c|messagebuf.obj|_knl_mbf_free@1|4	1	_knl_mbf_free@1	4	0	61	0
+1	0x000040bf|messagebuf.obj|_knl_msg_to_mbf@1|18	1	_knl_msg_to_mbf@1	18	0	61	1	65
+1	0x00007467|string.obj|_knl_memcpy|10	1	_knl_memcpy	10	0	64	0
+1	0x00002f3d|mailbox.obj|_mbx_chg_pri@1|6	1	_mbx_chg_pri@1	6	0	0	1	8
+1	0x00007f3d|vector.obj|knl_inthdr_entry2|4294967295	2	knl_inthdr_entry2	4294967295	0	0	0
+1	0x00007f99|vector.obj|knl_inthdr_entry48|4294967295	2	knl_inthdr_entry48	4294967295	0	0	0
+1	0x00007f83|vector.obj|knl_inthdr_entry37|4294967295	2	knl_inthdr_entry37	4294967295	0	0	0
+1	0x00007f8d|vector.obj|knl_inthdr_entry42|4294967295	2	knl_inthdr_entry42	4294967295	0	0	0
+1	0x00007f89|vector.obj|knl_inthdr_entry40|4294967295	2	knl_inthdr_entry40	4294967295	0	0	0
+1	0x00007f4b|vector.obj|knl_inthdr_entry9|4294967295	2	knl_inthdr_entry9	4294967295	0	0	0
+1	0x00007f41|vector.obj|knl_inthdr_entry4|4294967295	2	knl_inthdr_entry4	4294967295	0	0	0
+1	0x00007f6b|vector.obj|knl_inthdr_entry25|4294967295	2	knl_inthdr_entry25	4294967295	0	0	0
+1	0x00007f67|vector.obj|knl_inthdr_entry23|4294967295	2	knl_inthdr_entry23	4294967295	0	0	0
+1	0x00007f51|vector.obj|knl_inthdr_entry12|4294967295	2	knl_inthdr_entry12	4294967295	0	0	0
+1	0x00007f4f|vector.obj|knl_inthdr_entry11|4294967295	2	knl_inthdr_entry11	4294967295	0	0	0
+1	0x00007495|string.obj|_knl_strcpy|8	1	_knl_strcpy	8	0	0	0
+1	0x000068d4|time_calls.obj|_knl_call_cychdr|8	1	_knl_call_cychdr	8	0	0	5	80	82	6	47	4
+1	0x00006586|time_calls.obj|_knl_cyc_next_time@1|16	1	_knl_cyc_next_time@1	16	0	79	1	81
+1	0x00006565|time_calls.obj|_knl_abstim_reached@1|10	1	_knl_abstim_reached@1	10	0	80	0
+1	0x00006457|timer.obj|_knl_timer_insert_abs|8	1	_knl_timer_insert_abs	8	0	79	1	83
+1	0x00006388|timer.obj|_knl_enqueue_tmeb@1|18	1	_knl_enqueue_tmeb@1	18	0	82	0
+1	0x00002395|inittask.obj|_init_task_main|6	1	_init_task_main	6	0	0	7	85	86	90	248	102	249	250
+1	0x00007bc4|devinit.obj|_knl_start_device|4	1	_knl_start_device	4	0	84	0
+1	0x00007ab1|libtm_printf.obj|_tm_printf|10	8	_tm_printf	10	0	84	1	87
+1	0x00007653|libtm_printf.obj|_tm_vsprintf@1|46	1	_tm_vsprintf@1	46	0	86	2	88	89
+1	0x00000000|libtm_printf.obj||4294967295	5	 	4294967295	0	87	0
+1	0x000075f5|libtm_printf.obj|_outint@1|14	1	_outint@1	14	0	87	0
+1	0x00007f9d|usermain_stackanalize.obj|_usermain|4	1	_usermain	4	0	84	84	91	97	100	101	109	110	111	113	116	118	120	126	128	129	132	133	134	135	138	141	145	146	149	151	153	155	157	158	159	160	162	164	165	166	167	169	171	173	174	175	177	179	181	183	184	191	193	194	196	197	201	202	203	204	205	207	210	211	212	213	217	219	220	221	222	223	224	225	226	227	229	233	234	235	236	238	240	241	242	243	244	245	246	247
+1	0x000057e9|task_manage.obj|_tk_cre_tsk|14	1	_tk_cre_tsk	14	0	90	7	92	4	93	94	22	6	95
+1	0x00003224|memory.obj|_knl_Imalloc|10	1	_knl_Imalloc	10	0	91	6	4	29	30	32	35	6
+1	0x000074a5|string.obj|_knl_strncpy|14	1	_knl_strncpy	14	0	91	0
+1	0x000056f9|task.obj|_knl_make_dormant|4	1	_knl_make_dormant	4	0	91	0
+1	0x000032c2|memory.obj|_knl_Ifree|10	1	_knl_Ifree	10	0	91	5	4	30	96	35	6
+1	0x00003202|memory.obj|_knl_removeAreaQue|4	1	_knl_removeAreaQue	4	0	95	0
+1	0x0000591d|task_manage.obj|_tk_del_tsk|10	1	_tk_del_tsk	10	0	90	5	98	4	99	22	6
+1	0x000057db|task_manage.obj|_knl_isTaskIndependent@1|4	1	_knl_isTaskIndependent@1	4	0	97	0
+1	0x000058f0|task_manage.obj|_knl_del_tsk@1|6	1	_knl_del_tsk@1	6	0	97	1	95
+1	0x000059ab|task_manage.obj|_tk_sta_tsk|12	1	_tk_sta_tsk	12	0	90	5	98	4	39	22	6
+1	0x00005a91|task_manage.obj|_tk_ext_tsk|4	1	_tk_ext_tsk	4	0	90	6	98	102	4	103	94	108
+1	0x000075d3|libtm.obj|_tm_putstring|8	1	_tm_putstring	8	0	101	3	4	3	6
+1	0x00005a56|task_manage.obj|_knl_ter_tsk@1|6	1	_knl_ter_tsk@1	6	0	101	4	104	105	319	107
+1	0x00005748|task.obj|_knl_make_non_ready|6	1	_knl_make_non_ready	6	0	103	2	53	55
+1	0x000057c8|task_manage.obj|_QueRemove@1|4	1	_QueRemove@1	4	0	103	0
+0	 	0	 	0	0	0	0
+1	0x0000498e|mutex.obj|_knl_signal_all_mutex|10	1	_knl_signal_all_mutex	10	0	103	3	58	36	52
+1	0x00007e4b|dispatch.obj|_knl_dispatch_to_schedtsk|4294967295	2	_knl_dispatch_to_schedtsk	4294967295	0	101	0
+1	0x00005ad7|task_manage.obj|_tk_exd_tsk|4	1	_tk_exd_tsk	4	0	90	6	98	102	4	103	99	108
+1	0x00005b1d|task_manage.obj|_tk_ter_tsk|10	1	_tk_ter_tsk	10	0	90	6	98	4	103	94	22	6
+1	0x00005bb7|task_manage.obj|_tk_chg_pri|12	1	_tk_chg_pri	12	0	90	6	98	4	112	52	22	6
+1	0x000049e8|mutex.obj|_knl_chg_pri_mutex|16	1	_knl_chg_pri_mutex	16	0	111	1	58
+1	0x00002546|cpuctl.obj|_tk_get_reg|16	1	_tk_get_reg	16	0	90	5	114	4	115	22	6
+1	0x00002445|cpuctl.obj|_knl_isTaskIndependent@1|4	1	_knl_isTaskIndependent@1	4	0	113	0
+1	0x00007c40|cpu_cntl.obj|_knl_get_reg|14	1	_knl_get_reg	14	0	113	0
+1	0x0000249f|cpuctl.obj|_tk_set_reg|16	1	_tk_set_reg	16	0	90	5	114	4	117	22	6
+1	0x00007bf4|cpu_cntl.obj|_knl_set_reg|14	1	_knl_set_reg	14	0	116	0
+1	0x00005cc7|task_manage.obj|_tk_ref_tsk|12	1	_tk_ref_tsk	12	0	90	5	98	119	4	22	6
+1	0x000073e8|string.obj|_knl_memset|20	1	_knl_memset	20	0	118	0
+1	0x000060b9|task_sync.obj|_tk_slp_tsk|12	1	_tk_slp_tsk	12	0	90	6	121	4	122	125	22	6
+1	0x00005e33|task_sync.obj|_knl_isTaskIndependent@1|4	1	_knl_isTaskIndependent@1	4	0	120	0
+1	0x000072c5|wait.obj|_knl_make_wait|12	1	_knl_make_wait	12	0	120	2	104	123
+1	0x000063f1|timer.obj|_knl_timer_insert|12	1	_knl_timer_insert	12	0	122	2	124	83
+1	0x00006331|timer.obj|_QueInit@1|4	1	_QueInit@1	4	0	123	0
+1	0x00005e2d|task_sync.obj|_QueInit@1|4	1	_QueInit@1	4	0	120	0
+1	0x0000615c|task_sync.obj|_tk_wup_tsk|12	1	_tk_wup_tsk	12	0	90	6	121	4	127	36	22	6
+1	0x00005e41|task_sync.obj|_knl_task_alive@1|4	1	_knl_task_alive@1	4	0	126	0
+1	0x00006222|task_sync.obj|_tk_can_wup|8	1	_tk_can_wup	8	0	90	4	121	4	22	6
+1	0x00005db5|task_manage.obj|_tk_rel_wai|8	1	_tk_rel_wai	8	0	90	5	98	4	130	22	6
+1	0x00007281|wait.obj|_knl_wait_release_ng|8	1	_knl_wait_release_ng	8	0	129	2	37	319
+0	 	0	 	0	0	0	0
+1	0x00005e4a|task_sync.obj|_tk_sus_tsk|14	1	_tk_sus_tsk	14	0	90	6	121	4	127	22	6	104
+1	0x00005f22|task_sync.obj|_tk_rsm_tsk|10	1	_tk_rsm_tsk	10	0	90	5	121	4	39	22	6
+1	0x00005ff0|task_sync.obj|_tk_frsm_tsk|10	1	_tk_frsm_tsk	10	0	90	5	121	4	39	22	6
+1	0x000062a4|task_sync.obj|_tk_dly_tsk|12	1	_tk_dly_tsk	12	0	90	6	121	4	136	125	22	6
+1	0x000072fb|wait.obj|_knl_make_wait_reltim|12	1	_knl_make_wait_reltim	12	0	135	2	104	137
+1	0x00006431|timer.obj|_knl_timer_insert_reltim|8	1	_knl_timer_insert_reltim	8	0	136	1	83
+1	0x000050d3|semaphore.obj|_tk_cre_sem|12	1	_tk_cre_sem	12	0	90	6	4	139	140	93	22	6
+1	0x000000eb|_COM_sidiv.obj|__COM_sidiv|10	2	__COM_sidiv	10	0	138	0
+1	0x00005082|semaphore.obj|_QueInit@1|4	1	_QueInit@1	4	0	138	0
+1	0x0000519c|semaphore.obj|_tk_del_sem|10	1	_tk_del_sem	10	0	90	5	4	142	144	22	6
+1	0x00007331|wait.obj|_knl_wait_delete|8	1	_knl_wait_delete	8	0	141	2	143	37
+1	0x000071e4|wait.obj|_isQueEmpty@1|4	1	_isQueEmpty@1	4	0	142	0
+1	0x00005088|semaphore.obj|_QueInsert@1|10	1	_QueInsert@1	10	0	141	0
+1	0x00005209|semaphore.obj|_tk_sig_sem|18	1	_tk_sig_sem	18	0	90	4	4	22	6	36
+1	0x00005378|semaphore.obj|_tk_wai_sem|22	1	_tk_wai_sem	22	0	90	5	4	147	148	22	6
+1	0x000073bc|wait.obj|_knl_gcb_top_of_wait_queue|10	1	_knl_gcb_top_of_wait_queue	10	0	146	1	143
+1	0x00007366|wait.obj|_knl_gcb_make_wait|10	1	_knl_gcb_make_wait	10	0	146	3	122	11	10
+1	0x00005493|semaphore.obj|_tk_ref_sem|10	1	_tk_ref_sem	10	0	90	4	4	150	22	6
+1	0x00007353|wait.obj|_knl_wait_tskid|6	1	_knl_wait_tskid	6	0	149	1	143
+1	0x0000265c|eventflag.obj|_tk_cre_flg|12	1	_tk_cre_flg	12	0	90	6	4	139	152	93	22	6
+1	0x000025ed|eventflag.obj|_QueInit@1|4	1	_QueInit@1	4	0	151	0
+1	0x0000270b|eventflag.obj|_tk_del_flg|10	1	_tk_del_flg	10	0	90	5	4	142	154	22	6
+1	0x000025f3|eventflag.obj|_QueInsert@1|10	1	_QueInsert@1	10	0	153	0
+1	0x00002778|eventflag.obj|_tk_set_flg|20	1	_tk_set_flg	20	0	90	5	4	156	36	22	6
+1	0x0000260c|eventflag.obj|_knl_eventflag_cond@1|4	1	_knl_eventflag_cond@1	4	0	155	0
+1	0x00002857|eventflag.obj|_tk_clr_flg|10	1	_tk_clr_flg	10	0	90	3	4	22	6
+1	0x000028c9|eventflag.obj|_tk_wai_flg|24	1	_tk_wai_flg	24	0	90	5	4	156	148	22	6
+1	0x00002a01|eventflag.obj|_tk_ref_flg|10	1	_tk_ref_flg	10	0	90	4	4	150	22	6
+1	0x00002d2e|mailbox.obj|_tk_cre_mbx|12	1	_tk_cre_mbx	12	0	90	6	4	139	161	93	22	6
+1	0x00002cdd|mailbox.obj|_QueInit@1|4	1	_QueInit@1	4	0	160	0
+1	0x00002ddc|mailbox.obj|_tk_del_mbx|10	1	_tk_del_mbx	10	0	90	5	4	142	163	22	6
+1	0x00002ce3|mailbox.obj|_QueInsert@1|10	1	_QueInsert@1	10	0	162	0
+1	0x00002e49|mailbox.obj|_tk_snd_mbx|10	1	_tk_snd_mbx	10	0	90	4	4	36	22	6
+1	0x00002f4e|mailbox.obj|_tk_rcv_mbx|18	1	_tk_rcv_mbx	18	0	90	4	4	148	22	6
+1	0x0000302f|mailbox.obj|_tk_ref_mbx|10	1	_tk_ref_mbx	10	0	90	4	4	150	22	6
+1	0x00004aa5|mutex.obj|_tk_cre_mtx|14	1	_tk_cre_mtx	14	0	90	6	4	139	168	93	22	6
+1	0x00004898|mutex.obj|_QueInit@1|4	1	_QueInit@1	4	0	167	0
+1	0x00004b7a|mutex.obj|_tk_del_mtx|12	1	_tk_del_mtx	12	0	90	6	4	57	142	170	22	6
+1	0x000048a9|mutex.obj|_QueInsert@1|10	1	_QueInsert@1	10	0	169	0
+1	0x00004c91|mutex.obj|_tk_loc_mtx|28	1	_tk_loc_mtx	28	0	90	7	172	4	52	122	170	22	6
+1	0x000048c2|mutex.obj|_knl_isTaskIndependent@1|4	1	_knl_isTaskIndependent@1	4	0	171	0
+1	0x00004e71|mutex.obj|_tk_unl_mtx|18	1	_tk_unl_mtx	18	0	90	8	172	4	57	58	36	52	22	6
+1	0x00004f7f|mutex.obj|_tk_ref_mtx|10	1	_tk_ref_mtx	10	0	90	4	4	150	22	6
+1	0x00004197|messagebuf.obj|_tk_cre_mbf|16	1	_tk_cre_mbf	16	0	90	8	92	4	139	176	93	22	6	95
+1	0x00004034|messagebuf.obj|_QueInit@1|4	1	_QueInit@1	4	0	175	0
+1	0x000042c1|messagebuf.obj|_tk_del_mbf|14	1	_tk_del_mbf	14	0	90	6	4	142	178	22	6	95
+1	0x00004045|messagebuf.obj|_QueInsert@1|10	1	_QueInsert@1	10	0	177	0
+1	0x00004385|messagebuf.obj|_tk_snd_mbf|22	1	_tk_snd_mbf	22	0	90	11	180	4	62	65	36	147	63	64	148	22	6
+1	0x0000405e|messagebuf.obj|_knl_isTaskIndependent@1|4	1	_knl_isTaskIndependent@1	4	0	179	0
+1	0x000044fc|messagebuf.obj|_tk_rcv_mbf|32	1	_tk_rcv_mbf	32	0	90	11	180	4	182	65	61	62	36	122	178	22	6
+1	0x0000407a|messagebuf.obj|_knl_mbf_empty@1|6	1	_knl_mbf_empty@1	6	0	181	0
+1	0x000046f9|messagebuf.obj|_tk_ref_mbf|12	1	_tk_ref_mbf	12	0	90	6	4	150	182	62	22	6
+1	0x0000340e|mempfix.obj|_tk_cre_mpf|18	1	_tk_cre_mpf	18	0	90	10	185	92	4	6	95	139	186	189	93	190
+1	0x000033c6|mempfix.obj|_knl_isTaskIndependent@1|4	1	_knl_isTaskIndependent@1	4	0	184	0
+1	0x00002b10|klock.obj|_knl_LockOBJ|18	1	_knl_LockOBJ	18	0	184	5	4	187	188	22	6
+1	0x00002ae7|klock.obj|_QueInsert@1|10	1	_QueInsert@1	10	0	186	0
+1	0x00002b00|klock.obj|_knl_ready_queue_top@1|4	1	_knl_ready_queue_top@1	4	0	186	0
+1	0x000033a7|mempfix.obj|_QueInit@1|4	1	_QueInit@1	4	0	184	0
+1	0x00002c28|klock.obj|_knl_UnlockOBJ|12	1	_knl_UnlockOBJ	12	0	184	5	4	187	188	22	6
+1	0x00003535|mempfix.obj|_tk_del_mpf|14	1	_tk_del_mpf	14	0	90	8	185	186	4	142	192	6	190	95
+1	0x000033ad|mempfix.obj|_QueInsert@1|10	1	_QueInsert@1	10	0	191	0
+1	0x000035fd|mempfix.obj|_tk_get_mpf|20	1	_tk_get_mpf	20	0	90	7	185	186	4	148	190	22	6
+1	0x0000372f|mempfix.obj|_tk_rel_mpf|12	1	_tk_rel_mpf	12	0	90	7	185	186	195	4	6	36	190
+1	0x0000010b|_COM_sirem.obj|__COM_sirem|10	2	__COM_sirem	10	0	194	0
+1	0x0000382a|mempfix.obj|_tk_ref_mpf|12	1	_tk_ref_mpf	12	0	90	6	185	186	4	150	6	190
+1	0x00003aa4|mempool.obj|_tk_cre_mpl|16	1	_tk_cre_mpl	16	0	90	12	198	199	92	4	139	200	93	32	33	22	6	95
+1	0x000038e9|mempool.obj|_knl_isTaskIndependent@1|4	1	_knl_isTaskIndependent@1	4	0	197	0
+1	0x000038f7|mempool.obj|_roundSize@1|4	1	_roundSize@1	4	0	197	0
+1	0x000038bf|mempool.obj|_QueInit@1|4	1	_QueInit@1	4	0	197	0
+1	0x00003c00|mempool.obj|_tk_del_mpl|14	1	_tk_del_mpl	14	0	90	7	198	4	142	34	22	6	95
+1	0x00003ce7|mempool.obj|_tk_get_mpl|20	1	_tk_get_mpl	20	0	90	8	198	199	4	147	28	148	22	6
+1	0x00003e02|mempool.obj|_tk_rel_mpl|18	1	_tk_rel_mpl	18	0	90	9	198	4	30	96	35	33	25	22	6
+1	0x00003f5c|mempool.obj|_tk_ref_mpl|14	1	_tk_ref_mpl	14	0	90	6	198	4	150	27	22	6
+1	0x00006705|time_calls.obj|_tk_set_tim|22	1	_tk_set_tim	22	0	90	4	206	4	22	6
+1	0x00006534|time_calls.obj|_knl_toLSYSTIM@1|10	1	_knl_toLSYSTIM@1	10	0	205	0
+1	0x000067a0|time_calls.obj|_tk_get_tim|32	1	_tk_get_tim	32	0	90	5	4	22	6	208	209
+1	0x00006554|time_calls.obj|_knl_toSYSTIM@1|12	1	_knl_toSYSTIM@1	12	0	207	0
+1	0x000000d8|memcpy.obj|_memcpy|6	2	_memcpy	6	0	207	0
+1	0x00006852|time_calls.obj|_tk_get_otm|18	1	_tk_get_otm	18	0	90	5	4	208	209	22	6
+1	0x0000662d|time_calls.obj|_tk_set_utc|16	1	_tk_set_utc	16	0	90	4	4	206	22	6
+1	0x00006699|time_calls.obj|_tk_get_utc|18	1	_tk_get_utc	18	0	90	5	4	208	209	22	6
+1	0x00006907|time_calls.obj|_tk_cre_cyc|14	1	_tk_cre_cyc	14	0	90	11	4	214	93	80	82	215	47	216	139	22	6
+1	0x0000651f|time_calls.obj|_QueRemoveNext@1|6	1	_QueRemoveNext@1	6	0	213	0
+1	0x0000657e|time_calls.obj|_knl_EnterTaskIndependent@1|4	1	_knl_EnterTaskIndependent@1	4	0	213	0
+1	0x00006582|time_calls.obj|_knl_LeaveTaskIndependent@1|4	1	_knl_LeaveTaskIndependent@1	4	0	213	0
+1	0x00006a41|time_calls.obj|_tk_del_cyc|14	1	_tk_del_cyc	14	0	90	4	4	218	22	6
+1	0x00006506|time_calls.obj|_QueInsert@1|10	1	_QueInsert@1	10	0	217	0
+1	0x00006ae1|time_calls.obj|_tk_sta_cyc|22	1	_tk_sta_cyc	22	0	90	6	4	81	80	82	22	6
+1	0x00006c22|time_calls.obj|_tk_stp_cyc|12	1	_tk_stp_cyc	12	0	90	3	4	22	6
+1	0x00006cb6|time_calls.obj|_tk_ref_cyc|22	1	_tk_ref_cyc	22	0	90	5	4	81	80	22	6
+1	0x00006dfe|time_calls.obj|_tk_cre_alm|10	1	_tk_cre_alm	10	0	90	6	4	214	93	139	22	6
+1	0x00006e90|time_calls.obj|_tk_del_alm|14	1	_tk_del_alm	14	0	90	4	4	218	22	6
+1	0x00006f30|time_calls.obj|_tk_sta_alm|22	1	_tk_sta_alm	22	0	90	7	4	215	47	216	82	22	6
+1	0x00007040|time_calls.obj|_tk_stp_alm|12	1	_tk_stp_alm	12	0	90	3	4	22	6
+1	0x000070d6|time_calls.obj|_tk_ref_alm|20	1	_tk_ref_alm	20	0	90	4	4	81	22	6
+1	0x00002a7a|int.obj|_tk_def_int|14	1	_tk_def_int	14	0	90	4	4	228	22	6
+1	0x00007c9c|interrupt.obj|_knl_define_inthdr|6	1	_knl_define_inthdr	6	0	227	0
+1	0x00005c60|task_manage.obj|_tk_rot_rdq|8	1	_tk_rot_rdq	8	0	90	6	4	98	230	232	22	6
+1	0x000057b4|task.obj|_knl_rotate_ready_queue_run|4	1	_knl_rotate_ready_queue_run	4	0	229	2	231	54
+1	0x00005629|task.obj|_knl_ready_queue_rotate@1|8	1	_knl_ready_queue_rotate@1	8	0	230	1	41
+1	0x000057aa|task.obj|_knl_rotate_ready_queue|4	1	_knl_rotate_ready_queue	4	0	229	2	231	54
+1	0x00005cba|task_manage.obj|_tk_get_tid|4	1	_tk_get_tid	4	0	90	0
+1	0x00002453|cpuctl.obj|_tk_dis_dsp|4	1	_tk_dis_dsp	4	0	90	1	114
+1	0x00002473|cpuctl.obj|_tk_ena_dsp|4	1	_tk_ena_dsp	4	0	90	2	114	22
+1	0x000047ec|misc_calls.obj|_tk_ref_sys|6	1	_tk_ref_sys	6	0	90	1	237
+1	0x000047de|misc_calls.obj|_knl_isTaskIndependent@1|4	1	_knl_isTaskIndependent@1	4	0	236	0
+1	0x0000500b|power.obj|_tk_set_pow|8	1	_tk_set_pow	8	0	90	4	4	239	22	6
+1	0x00007e4a|power_func.obj|_off_pow|4	1	_off_pow	4	0	238	0
+1	0x00004874|misc_calls.obj|_tk_ref_ver|4	1	_tk_ref_ver	4	0	90	0
+1	0x00007d0b|int_r5f104le.obj|_EnableInt|12	1	_EnableInt	12	0	90	2	4	6
+1	0x00007d92|int_r5f104le.obj|_DisableInt|6	1	_DisableInt	6	0	90	2	4	6
+1	0x00007dc6|int_r5f104le.obj|_ClearInt|6	1	_ClearInt	6	0	90	2	4	6
+1	0x00007dfb|int_r5f104le.obj|_CheckInt|4	1	_CheckInt	4	0	90	0
+1	0x00007dc5|int_r5f104le.obj|_EndOfInt|4	1	_EndOfInt	4	0	90	0
+1	0x00007e31|int_r5f104le.obj|_SetCpuIntLevel|4	1	_SetCpuIntLevel	4	0	90	0
+1	0x00007e40|int_r5f104le.obj|_GetCpuIntLevel|4	1	_GetCpuIntLevel	4	0	90	0
+1	0x00007bc6|devinit.obj|_knl_finish_device|4	1	_knl_finish_device	4	0	84	0
+1	0x00007bce|start_dev.obj|_knl_restart_device|4	1	_knl_restart_device	4	0	84	1	102
+1	0x0000243d|sysinit.obj|_knl_tkernel_exit|4	1	_knl_tkernel_exit	4	0	84	2	251	252
+1	0x00006383|timer.obj|_knl_timer_shutdown|4	1	_knl_timer_shutdown	4	0	250	0
+1	0x00007bc9|start_dev.obj|_knl_shutdown_device|4	1	_knl_shutdown_device	4	0	250	1	4
+1	0x00007f5f|vector.obj|knl_inthdr_entry19|4294967295	2	knl_inthdr_entry19	4294967295	0	0	0
+1	0x00007f8b|vector.obj|knl_inthdr_entry41|4294967295	2	knl_inthdr_entry41	4294967295	0	0	0
+1	0x00002ae4|int.obj|_tk_ret_int|4	1	_tk_ret_int	4	0	0	1	256
+1	0x00007cc1|interrupt.obj|_knl_return_inthdr|4	1	_knl_return_inthdr	4	0	255	0
+1	0x00007e61|dispatch.obj|_ret_int_dispatch|4294967295	2	_ret_int_dispatch	4294967295	0	0	0
+1	0x00007f9b|vector.obj|knl_inthdr_entry49|4294967295	2	knl_inthdr_entry49	4294967295	0	0	0
+1	0x00007f81|vector.obj|knl_inthdr_entry36|4294967295	2	knl_inthdr_entry36	4294967295	0	0	0
+1	0x00007f7f|vector.obj|knl_inthdr_entry35|4294967295	2	knl_inthdr_entry35	4294967295	0	0	0
+1	0x00007f65|vector.obj|knl_inthdr_entry22|4294967295	2	knl_inthdr_entry22	4294967295	0	0	0
+1	0x00007f1c|dispatch.obj|_tk_ret_int_impl|4294967295	2	_tk_ret_int_impl	4294967295	0	0	0
+1	0x00005373|semaphore.obj|_sem_rel_wai@1|4	1	_sem_rel_wai@1	4	0	0	1	264
+1	0x000052f4|semaphore.obj|_sem_chg_pri@1|18	1	_sem_chg_pri@1	18	0	263	2	8	36
+1	0x00007f4d|vector.obj|knl_inthdr_entry10|4294967295	2	knl_inthdr_entry10	4294967295	0	0	0
+1	0x00007f3b|vector.obj|call_table|4294967295	2	call_table	4294967295	0	0	0
+1	0x000072a6|wait.obj|_knl_wait_release_tmout|6	1	_knl_wait_release_tmout	6	0	0	3	9	38	319
+1	0x000035ec|mempfix.obj|_mpf_chg_pri@1|6	1	_mpf_chg_pri@1	6	0	0	1	8
+1	0x00007f5d|vector.obj|knl_inthdr_entry18|4294967295	2	knl_inthdr_entry18	4294967295	0	0	0
+1	0x00007f59|vector.obj|knl_inthdr_entry16|4294967295	2	knl_inthdr_entry16	4294967295	0	0	0
+1	0x00004c6f|mutex.obj|_mtx_rel_wai@1|6	1	_mtx_rel_wai@1	6	0	0	1	57
+1	0x00007f47|vector.obj|knl_inthdr_entry7|4294967295	2	knl_inthdr_entry7	4294967295	0	0	0
+1	0x00007f95|vector.obj|knl_inthdr_entry46|4294967295	2	knl_inthdr_entry46	4294967295	0	0	0
+1	0x00007f7d|vector.obj|knl_inthdr_entry34|4294967295	2	knl_inthdr_entry34	4294967295	0	0	0
+1	0x00007f79|vector.obj|knl_inthdr_entry32|4294967295	2	knl_inthdr_entry32	4294967295	0	0	0
+1	0x00007f63|vector.obj|knl_inthdr_entry21|4294967295	2	knl_inthdr_entry21	4294967295	0	0	0
+1	0x00002348|cstart.obj|_start|4294967295	2	_start	4294967295	0	0	0
+1	0x000074ee|string.obj|_knl_strcmp|8	1	_knl_strcmp	8	0	0	0
+1	0x0000329e|memory.obj|_knl_Icalloc|10	1	_knl_Icalloc	10	0	0	2	92	119
+1	0x00007f43|vector.obj|knl_inthdr_entry5|4294967295	2	knl_inthdr_entry5	4294967295	0	0	0
+1	0x00007f3f|vector.obj|knl_inthdr_entry3|4294967295	2	knl_inthdr_entry3	4294967295	0	0	0
+1	0x00007f73|vector.obj|knl_inthdr_entry29|4294967295	2	knl_inthdr_entry29	4294967295	0	0	0
+1	0x00007cdc|reset_hdr.obj|_Reset_Handler|4	1	_Reset_Handler	4	0	0	2	284	285
+1	0x00007bc8|start_dev.obj|_knl_startup_device|4	1	_knl_startup_device	4	0	283	0
+1	0x000023d5|sysinit.obj|_main|4	1	_main	4	0	283	13	4	286	288	290	102	291	292	305	91	100	108	251	252
+1	0x00007547|libtm.obj|_libtm_init|4	1	_libtm_init	4	0	285	1	287
+1	0x00007b7d|tm_com.obj|_tm_com_init|4	1	_tm_com_init	4	0	286	0
+1	0x0000332a|memory.obj|_knl_init_Imalloc|8	1	_knl_init_Imalloc	8	0	285	3	289	32	35
+1	0x000030a8|memory.obj|_QueInit@1|4	1	_QueInit@1	4	0	288	0
+1	0x00007bc2|devinit.obj|_knl_init_device|4	1	_knl_init_device	4	0	285	0
+1	0x00007cc2|interrupt.obj|_knl_init_interrupt|4	1	_knl_init_interrupt	4	0	285	0
+1	0x000071a1|tkinit.obj|_knl_init_object|4	1	_knl_init_object	4	0	285	10	293	295	296	297	298	299	300	301	302	304
+1	0x00005671|task.obj|_knl_task_initialize|8	1	_knl_task_initialize	8	0	292	3	294	119	41
+1	0x0000550c|task.obj|_QueInit@1|4	1	_QueInit@1	4	0	293	0
+1	0x000050a1|semaphore.obj|_knl_semaphore_initialize|8	1	_knl_semaphore_initialize	8	0	292	2	140	144
+1	0x0000262a|eventflag.obj|_knl_eventflag_initialize|8	1	_knl_eventflag_initialize	8	0	292	2	152	154
+1	0x00002cfc|mailbox.obj|_knl_mailbox_initialize|8	1	_knl_mailbox_initialize	8	0	292	2	161	163
+1	0x0000408d|messagebuf.obj|_knl_messagebuffer_initialize|8	1	_knl_messagebuffer_initialize	8	0	292	2	176	178
+1	0x000048d0|mutex.obj|_knl_mutex_initialize|8	1	_knl_mutex_initialize	8	0	292	2	168	170
+1	0x0000391e|mempool.obj|_knl_memorypool_initialize|8	1	_knl_memorypool_initialize	8	0	292	2	200	34
+1	0x000033d4|mempfix.obj|_knl_fix_memorypool_initialize|8	1	_knl_fix_memorypool_initialize	8	0	292	2	189	192
+1	0x000068a2|time_calls.obj|_knl_cyclichandler_initialize|8	1	_knl_cyclichandler_initialize	8	0	292	2	303	218
+1	0x00006500|time_calls.obj|_QueInit@1|4	1	_QueInit@1	4	0	302	0
+1	0x00006daf|time_calls.obj|_knl_alarmhandler_initialize|8	1	_knl_alarmhandler_initialize	8	0	292	2	303	218
+1	0x00006337|timer.obj|_knl_timer_startup|4	1	_knl_timer_startup	4	0	285	3	124	4	6
+1	0x00007acb|libtm_printf.obj|_out_buf@1|12	1	_out_buf@1	12	0	0	0
+1	0x00007f5b|vector.obj|knl_inthdr_entry17|4294967295	2	knl_inthdr_entry17	4294967295	0	0	0
+1	0x00007f57|vector.obj|knl_inthdr_entry15|4294967295	2	knl_inthdr_entry15	4294967295	0	0	0
+1	0x00007cd2|interrupt.obj|_Default_Handler|4	1	_Default_Handler	4	0	0	1	310
+1	0x00007ab1|libtm_printf.obj|_tm_printf|8	8	_tm_printf	8	0	309	1	87
+1	0x00007f93|vector.obj|knl_inthdr_entry45|4294967295	2	knl_inthdr_entry45	4294967295	0	0	0
+1	0x00007f7b|vector.obj|knl_inthdr_entry33|4294967295	2	knl_inthdr_entry33	4294967295	0	0	0
+1	0x00007f77|vector.obj|knl_inthdr_entry31|4294967295	2	knl_inthdr_entry31	4294967295	0	0	0
+1	0x0000726f|wait.obj|_knl_wait_release_ok_ercd|8	1	_knl_wait_release_ok_ercd	8	0	0	1	37
+1	0x00007f87|vector.obj|knl_inthdr_entry39|4294967295	2	knl_inthdr_entry39	4294967295	0	0	0
+1	0x00007f61|vector.obj|knl_inthdr_entry20|4294967295	2	knl_inthdr_entry20	4294967295	0	0	0
+1	0x00007e49|power_func.obj|_low_pow|4	1	_low_pow	4	0	0	0
+1	0x00007afd|libtm_printf.obj|_tm_sprintf|14	8	_tm_sprintf	14	0	0	1	87
+1	0x00000002|task_manage.obj|rel_wai_hook|0	5	rel_wai_hook	0	0	103	4	263	271	23	59
+1	0x00000004|task.obj|chg_pri_hook|0	5	chg_pri_hook	0	0	52	6	264	51	24	268	66	60
+1	0x00000006|timer.obj|callback|0	5	callback	0	0	20	3	46	79	267
+317
+0x000028b8|eventflag.obj|_flg_chg_pri@1|6	0x00000011	17	6	0x00000d2c	1	1	0x000073ac|wait.obj|_knl_gcb_change_priority|8	0
+0x000030ae|memory.obj|_QueInsert@1|10	0x00000011	25	10	0x00001520	0	0	0
+0x0000372f|mempfix.obj|_tk_rel_mpf|12	0x02670001	251	12	0x00001d10	7	7	0x000033c6|mempfix.obj|_knl_isTaskIndependent@1|4	0x00002b10|klock.obj|_knl_LockOBJ|18	0x0000010b|_COM_sirem.obj|__COM_sirem|4294967295	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007cfa|int_rl78s3.obj|_enaint|4	0x00007262|wait.obj|_knl_wait_release_ok|6	0x00002c28|klock.obj|_knl_UnlockOBJ|12	0
+0x00003950|mempool.obj|_knl_appendFreeAreaBound@1|16	0x00000011	154	16	0x0000200c	2	2	0x000030c7|memory.obj|_knl_searchFreeArea|10	0x000038d0|mempool.obj|_QueInsert@1|10	0
+0x00003a67|mempool.obj|_knl_mpl_wakeup|10	0x00000001	61	10	0x00002110	4	4	0x000038c5|mempool.obj|_isQueEmpty@1|4	0x00003907|mempool.obj|_knl_MaxFreeSize@1|6	0x000039ea|mempool.obj|_knl_get_blk@1|16	0x00007262|wait.obj|_knl_wait_release_ok|6	0
+0x0000405e|messagebuf.obj|_knl_isTaskIndependent@1|4	0x00000011	14	4	0x0000283c	0	0	0
+0x000047de|misc_calls.obj|_knl_isTaskIndependent@1|4	0x00000011	14	4	0x00003050	0	0	0
+0x0000490c|mutex.obj|_knl_release_mutex|14	0x00000001	130	14	0x000031dc	2	2	0x0000489e|mutex.obj|_isQueEmpty@1|4	0x00005762|task.obj|_knl_change_task_priority|10	0
+0x00005088|semaphore.obj|_QueInsert@1|10	0x00000011	25	10	0x00003864	0	0	0
+0x00006907|time_calls.obj|_tk_cre_cyc|14	0x02690801	314	14	0x00005760	11	11	0x00007cf0|int_rl78s3.obj|_disint|4	0x0000651f|time_calls.obj|_QueRemoveNext@1|6	0x000074a5|string.obj|_knl_strncpy|14	0x00006586|time_calls.obj|_knl_cyc_next_time@1|16	0x00006457|timer.obj|_knl_timer_insert_abs|8	0x0000657e|time_calls.obj|_knl_EnterTaskIndependent@1|4	0x00000000|time_calls.obj||4294967295	0x00006582|time_calls.obj|_knl_LeaveTaskIndependent@1|4	0x000000eb|_COM_sidiv.obj|__COM_sidiv|4294967295	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00007040|time_calls.obj|_tk_stp_alm|12	0x00000001	150	12	0x00005e6c	3	3	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00007a8d|libtm_printf.obj|_out_cons@1|10	0x00000011	36	10	0x00006a1c	1	1	0x000075ad|libtm.obj|_tm_putchar|8	0
+0x00007cf0|int_rl78s3.obj|_disint|4	0x00000001	10	4	0x00006d7c	0	0	0
+0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00000002	0	4294967295	0x00007974	0	0	0
+0x00007f6f|vector.obj|knl_inthdr_entry27|4294967295	0x00000012	0	4294967295	0x00007c94	0	0	0
+0x0000249f|cpuctl.obj|_tk_set_reg|16	0x00000001	167	16	0x00000818	5	5	0x00002445|cpuctl.obj|_knl_isTaskIndependent@1|4	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007bf4|cpu_cntl.obj|_knl_set_reg|14	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00005378|semaphore.obj|_tk_wai_sem|22	0x0269c401	283	22	0x00003b74	5	5	0x00007cf0|int_rl78s3.obj|_disint|4	0x000073bc|wait.obj|_knl_gcb_top_of_wait_queue|10	0x00007366|wait.obj|_knl_gcb_make_wait|10	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x000075f5|libtm_printf.obj|_outint@1|14	0x00000011	94	14	0x000068c4	0	0	0
+0x000033a7|mempfix.obj|_QueInit@1|4	0x00000011	6	4	0x000018e4	0	0	0
+0x000038d0|mempool.obj|_QueInsert@1|10	0x00000011	25	10	0x00001f18	0	0	0
+0x0000403a|messagebuf.obj|_isQueEmpty@1|4	0x00000011	11	4	0x000027fc	0	0	0
+0x0000415a|messagebuf.obj|_knl_mbf_wakeup@1|10	0x00000011	61	10	0x0000294c	4	4	0x0000403a|messagebuf.obj|_isQueEmpty@1|4	0x0000406c|messagebuf.obj|_knl_mbf_free@1|4	0x000040bf|messagebuf.obj|_knl_msg_to_mbf@1|18	0x00007262|wait.obj|_knl_wait_release_ok|6	0
+0x000048d0|mutex.obj|_knl_mutex_initialize|8	0x00000001	60	8	0x00003184	2	2	0x00004898|mutex.obj|_QueInit@1|4	0x000048a9|mutex.obj|_QueInsert@1|10	0
+0x000050a1|semaphore.obj|_knl_semaphore_initialize|8	0x00000001	50	8	0x00003884	2	2	0x00005082|semaphore.obj|_QueInit@1|4	0x00005088|semaphore.obj|_QueInsert@1|10	0
+0x00005493|semaphore.obj|_tk_ref_sem|10	0x00000001	121	10	0x00003c20	4	4	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007353|wait.obj|_knl_wait_tskid|6	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x000057b4|task.obj|_knl_rotate_ready_queue_run|4	0x00000001	20	4	0x00004010	2	2	0x00005629|task.obj|_knl_ready_queue_rotate@1|8	0x00005661|task.obj|_knl_reschedule@1|4	0
+0x00006cb6|time_calls.obj|_tk_ref_cyc|22	0x00000001	249	22	0x00005a9c	5	5	0x00007cf0|int_rl78s3.obj|_disint|4	0x00006565|time_calls.obj|_knl_abstim_reached@1|10	0x00006586|time_calls.obj|_knl_cyc_next_time@1|16	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x000071a1|tkinit.obj|_knl_init_object|4	0x00000001	67	4	0x00005f70	10	10	0x00005671|task.obj|_knl_task_initialize|8	0x000050a1|semaphore.obj|_knl_semaphore_initialize|8	0x0000262a|eventflag.obj|_knl_eventflag_initialize|8	0x00002cfc|mailbox.obj|_knl_mailbox_initialize|8	0x0000408d|messagebuf.obj|_knl_messagebuffer_initialize|8	0x000048d0|mutex.obj|_knl_mutex_initialize|8	0x0000391e|mempool.obj|_knl_memorypool_initialize|8	0x000033d4|mempfix.obj|_knl_fix_memorypool_initialize|8	0x000068a2|time_calls.obj|_knl_cyclichandler_initialize|8	0x00006daf|time_calls.obj|_knl_alarmhandler_initialize|8	0
+0x0000721b|wait.obj|_knl_queue_insert_tpri@1|10	0x00000011	39	10	0x00006108	1	1	0x000071ef|wait.obj|_QueInsert@1|10	0
+0x000074a5|string.obj|_knl_strncpy|14	0x00000001	73	14	0x00006604	0	0	0
+0x00007bc9|start_dev.obj|_knl_shutdown_device|4	0x00000001	5	4	0x00006bd0	1	1	0x00007cf0|int_rl78s3.obj|_disint|4	0
+0x00007bce|start_dev.obj|_knl_restart_device|4	0x00000001	38	4	0x00006c0c	1	1	0x000075d3|libtm.obj|_tm_putstring|8	0
+0x00007ea2|dispatch.obj|_knl_systim_inthdr|4294967295	0x00000002	0	4294967295	0x000078f4	0	0	0
+0x00007f91|vector.obj|knl_inthdr_entry44|4294967295	0x00000012	0	4294967295	0x00007d14	0	0	0
+0x000044fc|messagebuf.obj|_tk_rcv_mbf|32	0x00000001	509	32	0x00002de0	11	11	0x0000405e|messagebuf.obj|_knl_isTaskIndependent@1|4	0x00007cf0|int_rl78s3.obj|_disint|4	0x0000407a|messagebuf.obj|_knl_mbf_empty@1|6	0x00007467|string.obj|_knl_memcpy|10	0x0000415a|messagebuf.obj|_knl_mbf_wakeup@1|10	0x0000403a|messagebuf.obj|_isQueEmpty@1|4	0x00007262|wait.obj|_knl_wait_release_ok|6	0x000072c5|wait.obj|_knl_make_wait|12	0x00004045|messagebuf.obj|_QueInsert@1|10	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x000035fd|mempfix.obj|_tk_get_mpf|20	0x02649801	306	20	0x00001c10	7	7	0x000033c6|mempfix.obj|_knl_isTaskIndependent@1|4	0x00002b10|klock.obj|_knl_LockOBJ|18	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007366|wait.obj|_knl_gcb_make_wait|10	0x00002c28|klock.obj|_knl_UnlockOBJ|12	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00002a01|eventflag.obj|_tk_ref_flg|10	0x00000001	121	10	0x00000e14	4	4	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007353|wait.obj|_knl_wait_tskid|6	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00002d2e|mailbox.obj|_tk_cre_mbx|12	0x00000001	174	12	0x000011a0	6	6	0x00007cf0|int_rl78s3.obj|_disint|4	0x000000eb|_COM_sidiv.obj|__COM_sidiv|4294967295	0x00002cdd|mailbox.obj|_QueInit@1|4	0x000074a5|string.obj|_knl_strncpy|14	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00003ce3|mempool.obj|_mpl_rel_wai@1|4	0x00000011	4	4	0x00002484	1	1	0x00003cc1|mempool.obj|_mpl_chg_pri@1|8	0
+0x00003f5c|mempool.obj|_tk_ref_mpl|14	0x00000001	216	14	0x00002714	6	6	0x000038e9|mempool.obj|_knl_isTaskIndependent@1|4	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007353|wait.obj|_knl_wait_tskid|6	0x00003907|mempool.obj|_knl_MaxFreeSize@1|6	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x0000407a|messagebuf.obj|_knl_mbf_empty@1|6	0x00000011	19	6	0x0000287c	0	0	0
+0x000048a9|mutex.obj|_QueInsert@1|10	0x00000011	25	10	0x00003144	0	0	0
+0x000056f9|task.obj|_knl_make_dormant|4	0x00000001	53	4	0x00003e74	0	0	0
+0x000062a4|task_sync.obj|_tk_dly_tsk|12	0x00000001	141	12	0x00004f00	6	6	0x00005e33|task_sync.obj|_knl_isTaskIndependent@1|4	0x00007cf0|int_rl78s3.obj|_disint|4	0x000072fb|wait.obj|_knl_make_wait_reltim|12	0x00005e2d|task_sync.obj|_QueInit@1|4	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x0000646a|timer.obj|_knl_timer_handler|12	0x00000001	150	12	0x0000516c	4	4	0x00007cf0|int_rl78s3.obj|_disint|4	0x00000000|timer.obj||4294967295	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x0000657e|time_calls.obj|_knl_EnterTaskIndependent@1|4	0x00000011	4	4	0x000052bc	0	0	0
+0x00006699|time_calls.obj|_tk_get_utc|18	0x00000001	108	18	0x000053c8	5	5	0x00007cf0|int_rl78s3.obj|_disint|4	0x00006554|time_calls.obj|_knl_toSYSTIM@1|12	0x000000d8|memcpy.obj|_memcpy|4294967295	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x0000754a|libtm.obj|_tm_getchar|8	0x00000001	25	8	0x000066a0	3	3	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007b45|tm_com.obj|_tm_rcv_dat|6	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00007b7d|tm_com.obj|_tm_com_init|4	0x00000001	69	4	0x00006b30	0	0	0
+0x00007dc5|int_r5f104le.obj|_EndOfInt|4	0x00000001	1	4	0x00006e6c	0	0	0
+0x00007f75|vector.obj|knl_inthdr_entry30|4294967295	0x00000012	0	4294967295	0x00007a74	0	0	0
+0x00007f8f|vector.obj|knl_inthdr_entry43|4294967295	0x00000012	0	4294967295	0x00007cd4	0	0	0
+0x00007f85|vector.obj|knl_inthdr_entry38|4294967295	0x00000012	0	4294967295	0x00007d94	0	0	0
+0x00007f49|vector.obj|knl_inthdr_entry8|4294967295	0x02699c12	0	4294967295	0x00007ef4	0	0	0
+0x00000004|task.obj|chg_pri_hook|0	0x00000005	0	0	0x00000004	0	0	0
+0x000038f7|mempool.obj|_roundSize@1|4	0x00000011	16	4	0x00001f58	0	0	0
+0x0000391e|mempool.obj|_knl_memorypool_initialize|8	0x00000001	50	8	0x00001fb4	2	2	0x000038bf|mempool.obj|_QueInit@1|4	0x000038d0|mempool.obj|_QueInsert@1|10	0
+0x00003cc1|mempool.obj|_mpl_chg_pri@1|8	0x00000011	34	8	0x0000242c	2	2	0x000073ac|wait.obj|_knl_gcb_change_priority|8	0x00003a67|mempool.obj|_knl_mpl_wakeup|10	0
+0x000046f9|messagebuf.obj|_tk_ref_mbf|12	0x80001401	229	12	0x00002f6c	6	6	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007353|wait.obj|_knl_wait_tskid|6	0x0000407a|messagebuf.obj|_knl_mbf_empty@1|6	0x0000403a|messagebuf.obj|_isQueEmpty@1|4	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00004f7f|mutex.obj|_tk_ref_mtx|10	0x00000001	140	10	0x00003724	4	4	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007353|wait.obj|_knl_wait_tskid|6	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00005209|semaphore.obj|_tk_sig_sem|18	0x00000001	235	18	0x00003a50	4	4	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0x00007262|wait.obj|_knl_wait_release_ok|6	0
+0x0000552b|task.obj|_knl_ready_queue_top@1|4	0x00000011	16	4	0x00003cf0	0	0	0
+0x00005748|task.obj|_knl_make_non_ready|6	0x00000001	26	6	0x00003ed0	2	2	0x00005590|task.obj|_knl_ready_queue_delete@1|12	0x0000552b|task.obj|_knl_ready_queue_top@1|4	0
+0x000057db|task_manage.obj|_knl_isTaskIndependent@1|4	0x00000011	14	4	0x00004088	0	0	0
+0x00006de1|time_calls.obj|_knl_call_almhdr|6	0x00000001	29	6	0x00005bbc	3	3	0x00007cfa|int_rl78s3.obj|_enaint|4	0x00000000|time_calls.obj||4294967295	0x00007cf0|int_rl78s3.obj|_disint|4	0
+0x00007467|string.obj|_knl_memcpy|10	0x00000001	34	10	0x000065a4	0	0	0
+0x00007489|string.obj|_knl_strlen|4	0x00000001	12	4	0x000065c4	0	0	0
+0x00007dfb|int_r5f104le.obj|_CheckInt|4	0x00000001	54	4	0x00006ee4	0	0	0
+0x00007ed9|dispatch.obj|_knl_hll_inthdr|4294967295	0x00000002	0	4294967295	0x000078d4	0	0	0
+0x00007f69|vector.obj|knl_inthdr_entry24|4294967295	0x00000012	0	4294967295	0x00007b14	0	0	0
+0x00007f6d|vector.obj|knl_inthdr_entry26|4294967295	0x00000012	0	4294967295	0x00007c14	0	0	0
+0x00006431|timer.obj|_knl_timer_insert_reltim|8	0x0269a401	38	8	0x000050f4	1	1	0x00006388|timer.obj|_knl_enqueue_tmeb@1|18	0
+0x000072fb|wait.obj|_knl_make_wait_reltim|12	0x00000001	54	12	0x00006390	2	2	0x00005748|task.obj|_knl_make_non_ready|6	0x00006431|timer.obj|_knl_timer_insert_reltim|8	0
+0x00002f3d|mailbox.obj|_mbx_chg_pri@1|6	0x00000011	17	6	0x000013a4	1	1	0x000073ac|wait.obj|_knl_gcb_change_priority|8	0
+0x000030c7|memory.obj|_knl_searchFreeArea|10	0x00000001	104	10	0x00001540	0	0	0
+0x0000319a|memory.obj|_knl_removeFreeQue|8	0x00000001	65	8	0x000015b8	1	1	0x000030ae|memory.obj|_QueInsert@1|10	0
+0x000033d4|mempfix.obj|_knl_fix_memorypool_initialize|8	0x00000001	58	8	0x00001944	2	2	0x000033a7|mempfix.obj|_QueInit@1|4	0x000033ad|mempfix.obj|_QueInsert@1|10	0
+0x0000406c|messagebuf.obj|_knl_mbf_free@1|4	0x00000011	14	4	0x0000285c	0	0	0
+0x0000435f|messagebuf.obj|_mbf_chg_pri@1|8	0x00000011	34	8	0x00002bdc	2	2	0x000073ac|wait.obj|_knl_gcb_change_priority|8	0x0000415a|messagebuf.obj|_knl_mbf_wakeup@1|10	0
+0x00004381|messagebuf.obj|_mbf_rel_wai@1|4	0x00000011	4	4	0x00002c34	1	1	0x0000435f|messagebuf.obj|_mbf_chg_pri@1|8	0
+0x0000489e|mutex.obj|_isQueEmpty@1|4	0x00000011	11	4	0x00003124	0	0	0
+0x00004c05|mutex.obj|_mtx_chg_pri@1|14	0x00000011	106	14	0x00003474	3	3	0x000073ac|wait.obj|_knl_gcb_change_priority|8	0x00005762|task.obj|_knl_change_task_priority|10	0x0000490c|mutex.obj|_knl_release_mutex|14	0
+0x0000572e|task.obj|_knl_make_ready|8	0x00000001	26	8	0x00003e94	1	1	0x0000553b|task.obj|_knl_ready_queue_insert@1|14	0
+0x0000591d|task_manage.obj|_tk_del_tsk|10	0x00000001	142	10	0x000041c8	5	5	0x000057db|task_manage.obj|_knl_isTaskIndependent@1|4	0x00007cf0|int_rl78s3.obj|_disint|4	0x000058f0|task_manage.obj|_knl_del_tsk@1|6	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00006c22|time_calls.obj|_tk_stp_cyc|12	0x00000001	148	12	0x00005a28	3	3	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x000071ef|wait.obj|_QueInsert@1|10	0x00000011	25	10	0x000060c8	0	0	0
+0x00007331|wait.obj|_knl_wait_delete|8	0x00000001	34	8	0x000063e8	2	2	0x000071e4|wait.obj|_isQueEmpty@1|4	0x00007251|wait.obj|_knl_wait_release@1|6	0
+0x00007512|string.obj|_knl_strcat|10	0x00000001	53	10	0x00006644	0	0	0
+0x00007563|libtm.obj|_tm_getline|10	0x00000001	74	10	0x00006714	4	4	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007b45|tm_com.obj|_tm_rcv_dat|6	0x00007b26|tm_com.obj|_tm_snd_dat|6	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00007bc8|start_dev.obj|_knl_startup_device|4	0x00000001	1	4	0x00006bb0	0	0	0
+0x00007dc6|int_r5f104le.obj|_ClearInt|6	0x00000001	53	6	0x00006e8c	2	2	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00007f45|vector.obj|knl_inthdr_entry6|4294967295	0x00000012	0	4294967295	0x00007eb4	0	0	0
+0x00007bf4|cpu_cntl.obj|_knl_set_reg|14	0x02695c01	76	14	0x00006c48	0	0	0
+0x000030a8|memory.obj|_QueInit@1|4	0x00000011	6	4	0x00001500	0	0	0
+0x00003224|memory.obj|_knl_Imalloc|10	0x00000001	122	10	0x00001634	6	6	0x00007cf0|int_rl78s3.obj|_disint|4	0x000030c7|memory.obj|_knl_searchFreeArea|10	0x0000319a|memory.obj|_knl_removeFreeQue|8	0x000031db|memory.obj|_knl_insertAreaQue|10	0x0000312f|memory.obj|_knl_appendFreeArea|14	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x0000332a|memory.obj|_knl_init_Imalloc|8	0x00000001	125	8	0x00001838	3	3	0x000030a8|memory.obj|_QueInit@1|4	0x000031db|memory.obj|_knl_insertAreaQue|10	0x0000312f|memory.obj|_knl_appendFreeArea|14	0
+0x000038e9|mempool.obj|_knl_isTaskIndependent@1|4	0x00000011	14	4	0x00001f38	0	0	0
+0x000039ea|mempool.obj|_knl_get_blk@1|16	0x00000011	125	16	0x00002064	5	5	0x000030c7|memory.obj|_knl_searchFreeArea|10	0x0000319a|memory.obj|_knl_removeFreeQue|8	0x000031db|memory.obj|_knl_insertAreaQue|10	0x00003950|mempool.obj|_knl_appendFreeAreaBound@1|16	0x0000312f|memory.obj|_knl_appendFreeArea|14	0
+0x000057aa|task.obj|_knl_rotate_ready_queue|4	0x00000001	10	4	0x00003fb8	2	2	0x00005629|task.obj|_knl_ready_queue_rotate@1|8	0x00005661|task.obj|_knl_reschedule@1|4	0
+0x00005e2d|task_sync.obj|_QueInit@1|4	0x00000011	6	4	0x000049f0	0	0	0
+0x00005e41|task_sync.obj|_knl_task_alive@1|4	0x00000011	9	4	0x00004a30	0	0	0
+0x0000662d|time_calls.obj|_tk_set_utc|16	0x00000001	108	16	0x00005338	4	4	0x00007cf0|int_rl78s3.obj|_disint|4	0x00006534|time_calls.obj|_knl_toLSYSTIM@1|10	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00006705|time_calls.obj|_tk_set_tim|22	0x00000001	155	22	0x00005474	4	4	0x00006534|time_calls.obj|_knl_toLSYSTIM@1|10	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00006dfe|time_calls.obj|_tk_cre_alm|10	0x00000001	146	10	0x00005c30	6	6	0x00007cf0|int_rl78s3.obj|_disint|4	0x0000651f|time_calls.obj|_QueRemoveNext@1|6	0x000074a5|string.obj|_knl_strncpy|14	0x000000eb|_COM_sidiv.obj|__COM_sidiv|4294967295	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00007bc2|devinit.obj|_knl_init_device|4	0x00000001	2	4	0x00006b50	0	0	0
+0x00007f89|vector.obj|knl_inthdr_entry40|4294967295	0x00000012	0	4294967295	0x00007b54	0	0	0
+0x00007f8d|vector.obj|knl_inthdr_entry42|4294967295	0x00000012	0	4294967295	0x00007c54	0	0	0
+0x00007f83|vector.obj|knl_inthdr_entry37|4294967295	0x00000012	0	4294967295	0x00007d54	0	0	0
+0x00007f99|vector.obj|knl_inthdr_entry48|4294967295	0x00000012	0	4294967295	0x00007df4	0	0	0
+0x00007f3d|vector.obj|knl_inthdr_entry2|4294967295	0x00000012	0	4294967295	0x00007e34	0	0	0
+0x00002546|cpuctl.obj|_tk_get_reg|16	0x00000001	167	16	0x000008fc	5	5	0x00002445|cpuctl.obj|_knl_isTaskIndependent@1|4	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007c40|cpu_cntl.obj|_knl_get_reg|14	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x000072c5|wait.obj|_knl_make_wait|12	0x00000001	54	12	0x00006338	2	2	0x00005748|task.obj|_knl_make_non_ready|6	0x000063f1|timer.obj|_knl_timer_insert|12	0
+0x00000002|task_manage.obj|rel_wai_hook|0	0x59ab9405	0	0	0x00000002	0	0	0
+0x00004c91|mutex.obj|_tk_loc_mtx|28	0x00000001	480	28	0x00003524	7	7	0x000048c2|mutex.obj|_knl_isTaskIndependent@1|4	0x00007cf0|int_rl78s3.obj|_disint|4	0x00005762|task.obj|_knl_change_task_priority|10	0x000072c5|wait.obj|_knl_make_wait|12	0x000048a9|mutex.obj|_QueInsert@1|10	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x0000500b|power.obj|_tk_set_pow|8	0x02678c01	119	8	0x000037b4	4	4	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007e4a|power_func.obj|_off_pow|4	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x000052f4|semaphore.obj|_sem_chg_pri@1|18	0x00000011	127	18	0x00003ae0	2	2	0x000073ac|wait.obj|_knl_gcb_change_priority|8	0x00007262|wait.obj|_knl_wait_release_ok|6	0
+0x000059ab|task_manage.obj|_tk_sta_tsk|12	0x00000001	171	12	0x00004290	5	5	0x000057db|task_manage.obj|_knl_isTaskIndependent@1|4	0x00007cf0|int_rl78s3.obj|_disint|4	0x0000572e|task.obj|_knl_make_ready|8	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00005a56|task_manage.obj|_knl_ter_tsk@1|6	0x00000011	59	6	0x00004358	4	4	0x00005748|task.obj|_knl_make_non_ready|6	0x000057c8|task_manage.obj|_QueRemove@1|4	0x00000000|task_manage.obj||4294967295	0x0000498e|mutex.obj|_knl_signal_all_mutex|10	0
+0x00007f51|vector.obj|knl_inthdr_entry12|4294967295	0x00000012	0	4294967295	0x000079f4	0	0	0
+0x00007f67|vector.obj|knl_inthdr_entry23|4294967295	0x00000012	0	4294967295	0x00007ab4	0	0	0
+0x00007f6b|vector.obj|knl_inthdr_entry25|4294967295	0x00000012	0	4294967295	0x00007b94	0	0	0
+0x00007f41|vector.obj|knl_inthdr_entry4|4294967295	0x02699812	0	4294967295	0x00007e74	0	0	0
+0x00007f4b|vector.obj|knl_inthdr_entry9|4294967295	0x00000012	0	4294967295	0x00007f14	0	0	0
+0x00007ab1|libtm_printf.obj|_tm_printf|8	0x00000008	26	8	0x00006a58	1	1	0x00007653|libtm_printf.obj|_tm_vsprintf@1|46	0
+0x00007c9c|interrupt.obj|_knl_define_inthdr|6	0x00000001	37	6	0x00006c88	0	0	0
+0x00007c40|cpu_cntl.obj|_knl_get_reg|14	0x00000001	92	14	0x00006c68	0	0	0
+0x00002395|inittask.obj|_init_task_main|6	0x00007c01	64	6	0x0000042c	7	7	0x00007bc4|devinit.obj|_knl_start_device|4	0x00007ab1|libtm_printf.obj|_tm_printf|10	0x00007f9d|usermain_stackanalize.obj|_usermain|4	0x00007bc6|devinit.obj|_knl_finish_device|4	0x000075d3|libtm.obj|_tm_putstring|8	0x00007bce|start_dev.obj|_knl_restart_device|4	0x0000243d|sysinit.obj|_knl_tkernel_exit|4	0
+0x0000262a|eventflag.obj|_knl_eventflag_initialize|8	0x00000001	50	8	0x00000a40	2	2	0x000025ed|eventflag.obj|_QueInit@1|4	0x000025f3|eventflag.obj|_QueInsert@1|10	0
+0x00002857|eventflag.obj|_tk_clr_flg|10	0x00000001	97	10	0x00000cb8	3	3	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00002b10|klock.obj|_knl_LockOBJ|18	0x00000001	280	18	0x00000fb0	5	5	0x00007cf0|int_rl78s3.obj|_disint|4	0x00002ae7|klock.obj|_QueInsert@1|10	0x00002b00|klock.obj|_knl_ready_queue_top@1|4	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x000032c2|memory.obj|_knl_Ifree|10	0x00000001	104	10	0x00001754	5	5	0x00007cf0|int_rl78s3.obj|_disint|4	0x0000319a|memory.obj|_knl_removeFreeQue|8	0x00003202|memory.obj|_knl_removeAreaQue|4	0x0000312f|memory.obj|_knl_appendFreeArea|14	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00003535|mempfix.obj|_tk_del_mpf|14	0x00000001	183	14	0x00001ad4	8	8	0x000033c6|mempfix.obj|_knl_isTaskIndependent@1|4	0x00002b10|klock.obj|_knl_LockOBJ|18	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007331|wait.obj|_knl_wait_delete|8	0x000033ad|mempfix.obj|_QueInsert@1|10	0x00007cfa|int_rl78s3.obj|_enaint|4	0x00002c28|klock.obj|_knl_UnlockOBJ|12	0x000032c2|memory.obj|_knl_Ifree|10	0
+0x0000382a|mempfix.obj|_tk_ref_mpf|12	0x00000001	149	12	0x00001e10	6	6	0x000033c6|mempfix.obj|_knl_isTaskIndependent@1|4	0x00002b10|klock.obj|_knl_LockOBJ|18	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007353|wait.obj|_knl_wait_tskid|6	0x00007cfa|int_rl78s3.obj|_enaint|4	0x00002c28|klock.obj|_knl_UnlockOBJ|12	0
+0x00003e02|mempool.obj|_tk_rel_mpl|18	0x00000001	346	18	0x000025c0	9	9	0x000038e9|mempool.obj|_knl_isTaskIndependent@1|4	0x00007cf0|int_rl78s3.obj|_disint|4	0x0000319a|memory.obj|_knl_removeFreeQue|8	0x00003202|memory.obj|_knl_removeAreaQue|4	0x0000312f|memory.obj|_knl_appendFreeArea|14	0x00003950|mempool.obj|_knl_appendFreeAreaBound@1|16	0x00003a67|mempool.obj|_knl_mpl_wakeup|10	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00004034|messagebuf.obj|_QueInit@1|4	0x00000011	6	4	0x000027dc	0	0	0
+0x00004197|messagebuf.obj|_tk_cre_mbf|16	0x00000001	298	16	0x000029dc	8	8	0x00003224|memory.obj|_knl_Imalloc|10	0x00007cf0|int_rl78s3.obj|_disint|4	0x000000eb|_COM_sidiv.obj|__COM_sidiv|4294967295	0x00004034|messagebuf.obj|_QueInit@1|4	0x000074a5|string.obj|_knl_strncpy|14	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0x000032c2|memory.obj|_knl_Ifree|10	0
+0x00005629|task.obj|_knl_ready_queue_rotate@1|8	0x00000011	56	8	0x00003d6c	1	1	0x00005512|task.obj|_QueInsert@1|10	0
+0x00005661|task.obj|_knl_reschedule@1|4	0x00000011	16	4	0x00003da8	1	1	0x0000552b|task.obj|_knl_ready_queue_top@1|4	0
+0x00005ff0|task_sync.obj|_tk_frsm_tsk|10	0x00000001	201	10	0x00004bfc	5	5	0x00005e33|task_sync.obj|_knl_isTaskIndependent@1|4	0x00007cf0|int_rl78s3.obj|_disint|4	0x0000572e|task.obj|_knl_make_ready|8	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00006500|time_calls.obj|_QueInit@1|4	0x00000011	6	4	0x000051fc	0	0	0
+0x000068d4|time_calls.obj|_knl_call_cychdr|8	0x00000001	51	8	0x000056b4	5	5	0x00006586|time_calls.obj|_knl_cyc_next_time@1|16	0x00006457|timer.obj|_knl_timer_insert_abs|8	0x00007cfa|int_rl78s3.obj|_enaint|4	0x00000000|time_calls.obj||4294967295	0x00007cf0|int_rl78s3.obj|_disint|4	0
+0x00006f30|time_calls.obj|_tk_sta_alm|22	0x00000001	272	22	0x00005d88	7	7	0x00007cf0|int_rl78s3.obj|_disint|4	0x0000657e|time_calls.obj|_knl_EnterTaskIndependent@1|4	0x00000000|time_calls.obj||4294967295	0x00006582|time_calls.obj|_knl_LeaveTaskIndependent@1|4	0x00006457|timer.obj|_knl_timer_insert_abs|8	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x000073e8|string.obj|_knl_memset|20	0x00000001	127	20	0x00006584	0	0	0
+0x00007495|string.obj|_knl_strcpy|8	0x00000001	16	8	0x000065e4	0	0	0
+0x000075ad|libtm.obj|_tm_putchar|8	0x00000001	38	8	0x000067c0	3	3	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007b26|tm_com.obj|_tm_snd_dat|6	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00007e31|int_r5f104le.obj|_SetCpuIntLevel|4	0x00000001	15	4	0x00006f04	0	0	0
+0x00007f4f|vector.obj|knl_inthdr_entry11|4294967295	0x00000012	0	4294967295	0x000079d4	0	0	0
+0x0000010b|_COM_sirem.obj|__COM_sirem|10	0x00000102	0	10	0x0000010b	0	0	0
+0x0000243d|sysinit.obj|_knl_tkernel_exit|4	0x0266c801	8	4	0x0000070c	2	2	0x00006383|timer.obj|_knl_timer_shutdown|4	0x00007bc9|start_dev.obj|_knl_shutdown_device|4	0
+0x0000270b|eventflag.obj|_tk_del_flg|10	0x00000001	109	10	0x00000b60	5	5	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007331|wait.obj|_knl_wait_delete|8	0x000025f3|eventflag.obj|_QueInsert@1|10	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00002ae4|int.obj|_tk_ret_int|4	0x00000001	3	4	0x00000f34	1	1	0x00007cc1|interrupt.obj|_knl_return_inthdr|4	0
+0x00002cfc|mailbox.obj|_knl_mailbox_initialize|8	0x00000001	50	8	0x00001148	2	2	0x00002cdd|mailbox.obj|_QueInit@1|4	0x00002ce3|mailbox.obj|_QueInsert@1|10	0
+0x000031db|memory.obj|_knl_insertAreaQue|10	0x00000001	39	10	0x000015f4	0	0	0
+0x00004b7a|mutex.obj|_tk_del_mtx|12	0x00000001	139	12	0x000033ac	6	6	0x00007cf0|int_rl78s3.obj|_disint|4	0x0000490c|mutex.obj|_knl_release_mutex|14	0x00007331|wait.obj|_knl_wait_delete|8	0x000048a9|mutex.obj|_QueInsert@1|10	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x000060b9|task_sync.obj|_tk_slp_tsk|12	0x00000001	163	12	0x00004cc4	6	6	0x00005e33|task_sync.obj|_knl_isTaskIndependent@1|4	0x00007cf0|int_rl78s3.obj|_disint|4	0x000072c5|wait.obj|_knl_make_wait|12	0x00005e2d|task_sync.obj|_QueInit@1|4	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00007262|wait.obj|_knl_wait_release_ok|6	0x00000001	13	6	0x000061f4	1	1	0x00007251|wait.obj|_knl_wait_release@1|6	0
+0x000073bc|wait.obj|_knl_gcb_top_of_wait_queue|10	0x00000001	44	10	0x00006548	1	1	0x000071e4|wait.obj|_isQueEmpty@1|4	0
+0x00007f8b|vector.obj|knl_inthdr_entry41|4294967295	0x00000012	0	4294967295	0x00007bd4	0	0	0
+0x00007f5f|vector.obj|knl_inthdr_entry19|4294967295	0x00000012	0	4294967295	0x00007c74	0	0	0
+0x00007653|libtm_printf.obj|_tm_vsprintf@1|46	0x00000011	1082	46	0x000068e4	2	2	0x00000000|libtm_printf.obj||4294967295	0x000075f5|libtm_printf.obj|_outint@1|14	0
+0x00002473|cpuctl.obj|_tk_ena_dsp|4	0x00000001	44	4	0x000007c0	2	2	0x00002445|cpuctl.obj|_knl_isTaskIndependent@1|4	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0
+0x0000260c|eventflag.obj|_knl_eventflag_cond@1|4	0x00000011	30	4	0x00000a20	0	0	0
+0x00002a7a|int.obj|_tk_def_int|14	0x00000001	106	14	0x00000ea4	4	4	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007c9c|interrupt.obj|_knl_define_inthdr|6	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00002ddc|mailbox.obj|_tk_del_mbx|10	0x00000001	109	10	0x00001268	5	5	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007331|wait.obj|_knl_wait_delete|8	0x00002ce3|mailbox.obj|_QueInsert@1|10	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x0000312f|memory.obj|_knl_appendFreeArea|14	0x00000001	107	14	0x00001560	2	2	0x000030c7|memory.obj|_knl_searchFreeArea|10	0x000030ae|memory.obj|_QueInsert@1|10	0
+0x000033ad|mempfix.obj|_QueInsert@1|10	0x00000011	25	10	0x00001904	0	0	0
+0x00004e71|mutex.obj|_tk_unl_mtx|18	0x00000001	270	18	0x00003624	8	8	0x000048c2|mutex.obj|_knl_isTaskIndependent@1|4	0x00007cf0|int_rl78s3.obj|_disint|4	0x0000490c|mutex.obj|_knl_release_mutex|14	0x0000489e|mutex.obj|_isQueEmpty@1|4	0x00007262|wait.obj|_knl_wait_release_ok|6	0x00005762|task.obj|_knl_change_task_priority|10	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00005373|semaphore.obj|_sem_rel_wai@1|4	0x02685811	5	4	0x00003b38	1	1	0x000052f4|semaphore.obj|_sem_chg_pri@1|18	0
+0x0000550c|task.obj|_QueInit@1|4	0x00000011	6	4	0x00003cb0	0	0	0
+0x0000553b|task.obj|_knl_ready_queue_insert@1|14	0x00000011	85	14	0x00003d10	1	1	0x00005512|task.obj|_QueInsert@1|10	0
+0x00005bb7|task_manage.obj|_tk_chg_pri|12	0x00000001	169	12	0x000046e8	6	6	0x000057db|task_manage.obj|_knl_isTaskIndependent@1|4	0x00007cf0|int_rl78s3.obj|_disint|4	0x000049e8|mutex.obj|_knl_chg_pri_mutex|16	0x00005762|task.obj|_knl_change_task_priority|10	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x000075d3|libtm.obj|_tm_putstring|8	0x00000001	34	8	0x00006850	3	3	0x00007cf0|int_rl78s3.obj|_disint|4	0x000075ad|libtm.obj|_tm_putchar|8	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00007b45|tm_com.obj|_tm_rcv_dat|6	0x00000001	56	6	0x00006b10	0	0	0
+0x00007bc4|devinit.obj|_knl_start_device|4	0x00000001	2	4	0x00006b70	0	0	0
+0x00007f1c|dispatch.obj|_tk_ret_int_impl|4294967295	0x00000002	0	4294967295	0x00007994	0	0	0
+0x00007f65|vector.obj|knl_inthdr_entry22|4294967295	0x00000012	0	4294967295	0x00007a54	0	0	0
+0x00007f7f|vector.obj|knl_inthdr_entry35|4294967295	0x00000012	0	4294967295	0x00007cb4	0	0	0
+0x00007f81|vector.obj|knl_inthdr_entry36|4294967295	0x00000012	0	4294967295	0x00007cf4	0	0	0
+0x00007f9b|vector.obj|knl_inthdr_entry49|4294967295	0x00000012	0	4294967295	0x00007e14	0	0	0
+0x00007e61|dispatch.obj|_ret_int_dispatch|4294967295	0x02695412	0	4294967295	0x00007f34	0	0	0
+0x00004385|messagebuf.obj|_tk_snd_mbf|22	0x00000001	375	22	0x00002c70	11	11	0x0000405e|messagebuf.obj|_knl_isTaskIndependent@1|4	0x00007cf0|int_rl78s3.obj|_disint|4	0x0000403a|messagebuf.obj|_isQueEmpty@1|4	0x00007467|string.obj|_knl_memcpy|10	0x00007262|wait.obj|_knl_wait_release_ok|6	0x000073bc|wait.obj|_knl_gcb_top_of_wait_queue|10	0x0000406c|messagebuf.obj|_knl_mbf_free@1|4	0x000040bf|messagebuf.obj|_knl_msg_to_mbf@1|18	0x00007366|wait.obj|_knl_gcb_make_wait|10	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00006554|time_calls.obj|_knl_toSYSTIM@1|12	0x00000011	17	12	0x0000527c	0	0	0
+0x000000d8|memcpy.obj|_memcpy|6	0x00000102	0	6	0x000000d8	0	0	0
+0x000023d5|sysinit.obj|_main|4	0x00000001	104	4	0x00000548	13	13	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007547|libtm.obj|_libtm_init|4	0x0000332a|memory.obj|_knl_init_Imalloc|8	0x00007bc2|devinit.obj|_knl_init_device|4	0x000075d3|libtm.obj|_tm_putstring|8	0x00007cc2|interrupt.obj|_knl_init_interrupt|4	0x000071a1|tkinit.obj|_knl_init_object|4	0x00006337|timer.obj|_knl_timer_startup|4	0x000057e9|task_manage.obj|_tk_cre_tsk|14	0x000059ab|task_manage.obj|_tk_sta_tsk|12	0x00007e4b|dispatch.obj|_knl_dispatch_to_schedtsk|4294967295	0x00006383|timer.obj|_knl_timer_shutdown|4	0x00007bc9|start_dev.obj|_knl_shutdown_device|4	0
+0x0000265c|eventflag.obj|_tk_cre_flg|12	0x00000001	175	12	0x00000a98	6	6	0x00007cf0|int_rl78s3.obj|_disint|4	0x000000eb|_COM_sidiv.obj|__COM_sidiv|4294967295	0x000025ed|eventflag.obj|_QueInit@1|4	0x000074a5|string.obj|_knl_strncpy|14	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x000035ec|mempfix.obj|_mpf_chg_pri@1|6	0x00000011	17	6	0x00001bd4	1	1	0x000073ac|wait.obj|_knl_gcb_change_priority|8	0
+0x00004874|misc_calls.obj|_tk_ref_ver|4	0x00000001	36	4	0x000030e4	0	0	0
+0x0000498e|mutex.obj|_knl_signal_all_mutex|10	0x00000001	90	10	0x00003234	3	3	0x0000489e|mutex.obj|_isQueEmpty@1|4	0x00007262|wait.obj|_knl_wait_release_ok|6	0x00005762|task.obj|_knl_change_task_priority|10	0
+0x00005590|task.obj|_knl_ready_queue_delete@1|12	0x00000011	153	12	0x00003d4c	0	0	0
+0x00005e33|task_sync.obj|_knl_isTaskIndependent@1|4	0x0268b411	14	4	0x00004a10	0	0	0
+0x00005e4a|task_sync.obj|_tk_sus_tsk|14	0x00000001	216	14	0x00004a50	6	6	0x00005e33|task_sync.obj|_knl_isTaskIndependent@1|4	0x00007cf0|int_rl78s3.obj|_disint|4	0x00005e41|task_sync.obj|_knl_task_alive@1|4	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0x00005748|task.obj|_knl_make_non_ready|6	0
+0x00006383|timer.obj|_knl_timer_shutdown|4	0x00000001	5	4	0x0000505c	0	0	0
+0x00006506|time_calls.obj|_QueInsert@1|10	0x00000011	25	10	0x0000521c	0	0	0
+0x0000651f|time_calls.obj|_QueRemoveNext@1|6	0x00000011	21	6	0x0000523c	0	0	0
+0x000072a6|wait.obj|_knl_wait_release_tmout|6	0x00000001	31	6	0x000062c4	3	3	0x00007208|wait.obj|_QueRemove@1|4	0x00007242|wait.obj|_knl_make_non_wait@1|4	0x00000000|wait.obj||4294967295	0
+0x00007353|wait.obj|_knl_wait_tskid|6	0x00000001	19	6	0x00006440	1	1	0x000071e4|wait.obj|_isQueEmpty@1|4	0
+0x00007cc2|interrupt.obj|_knl_init_interrupt|4	0x00000001	16	4	0x00006cc8	0	0	0
+0x00007cfa|int_rl78s3.obj|_enaint|4	0x00000001	17	4	0x00006d9c	0	0	0
+0x00007e40|int_r5f104le.obj|_GetCpuIntLevel|4	0x00000001	9	4	0x00006f24	0	0	0
+0x00007f3b|vector.obj|call_table|4294967295	0x00000002	0	4294967295	0x00007934	0	0	0
+0x00007f4d|vector.obj|knl_inthdr_entry10|4294967295	0x00000012	0	4294967295	0x000079b4	0	0	0
+0x000028c9|eventflag.obj|_tk_wai_flg|24	0x00000001	312	24	0x00000d68	5	5	0x00007cf0|int_rl78s3.obj|_disint|4	0x0000260c|eventflag.obj|_knl_eventflag_cond@1|4	0x00007366|wait.obj|_knl_gcb_make_wait|10	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00002445|cpuctl.obj|_knl_isTaskIndependent@1|4	0x00000011	14	4	0x00000764	0	0	0
+0x000025f3|eventflag.obj|_QueInsert@1|10	0x00000011	25	10	0x00000a00	0	0	0
+0x00002778|eventflag.obj|_tk_set_flg|20	0x00000001	223	20	0x00000c0c	5	5	0x00007cf0|int_rl78s3.obj|_disint|4	0x0000260c|eventflag.obj|_knl_eventflag_cond@1|4	0x00007262|wait.obj|_knl_wait_release_ok|6	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00002e49|mailbox.obj|_tk_snd_mbx|10	0x00000001	244	10	0x00001314	4	4	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007262|wait.obj|_knl_wait_release_ok|6	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00003907|mempool.obj|_knl_MaxFreeSize@1|6	0x00000011	23	6	0x00001f78	1	1	0x000038c5|mempool.obj|_isQueEmpty@1|4	0
+0x00003c00|mempool.obj|_tk_del_mpl|14	0x00000001	193	14	0x00002348	7	7	0x000038e9|mempool.obj|_knl_isTaskIndependent@1|4	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007331|wait.obj|_knl_wait_delete|8	0x000038d0|mempool.obj|_QueInsert@1|10	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0x000032c2|memory.obj|_knl_Ifree|10	0
+0x000040bf|messagebuf.obj|_knl_msg_to_mbf@1|18	0x00000011	155	18	0x000028f4	1	1	0x00007467|string.obj|_knl_memcpy|10	0
+0x000047ec|misc_calls.obj|_tk_ref_sys|6	0x00000001	136	6	0x00003070	1	1	0x000047de|misc_calls.obj|_knl_isTaskIndependent@1|4	0
+0x00004898|mutex.obj|_QueInit@1|4	0x00000011	6	4	0x00003104	0	0	0
+0x00004c6f|mutex.obj|_mtx_rel_wai@1|6	0x00000011	34	6	0x000034e8	1	1	0x0000490c|mutex.obj|_knl_release_mutex|14	0
+0x00005082|semaphore.obj|_QueInit@1|4	0x00000011	6	4	0x00003844	0	0	0
+0x00005671|task.obj|_knl_task_initialize|8	0x00000001	136	8	0x00003de4	3	3	0x0000550c|task.obj|_QueInit@1|4	0x000073e8|string.obj|_knl_memset|20	0x00005512|task.obj|_QueInsert@1|10	0
+0x00005f22|task_sync.obj|_tk_rsm_tsk|10	0x00000001	206	10	0x00004b34	5	5	0x00005e33|task_sync.obj|_knl_isTaskIndependent@1|4	0x00007cf0|int_rl78s3.obj|_disint|4	0x0000572e|task.obj|_knl_make_ready|8	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00006534|time_calls.obj|_knl_toLSYSTIM@1|10	0x02600011	32	10	0x0000525c	0	0	0
+0x000068a2|time_calls.obj|_knl_cyclichandler_initialize|8	0x00000001	50	8	0x0000565c	2	2	0x00006500|time_calls.obj|_QueInit@1|4	0x00006506|time_calls.obj|_QueInsert@1|10	0
+0x00006e90|time_calls.obj|_tk_del_alm|14	0x00000001	160	14	0x00005cf8	4	4	0x00007cf0|int_rl78s3.obj|_disint|4	0x00006506|time_calls.obj|_QueInsert@1|10	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00007bc6|devinit.obj|_knl_finish_device|4	0x00000001	2	4	0x00006b90	0	0	0
+0x00007d0b|int_r5f104le.obj|_EnableInt|12	0x00000001	135	12	0x00006dbc	2	2	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00007f59|vector.obj|knl_inthdr_entry16|4294967295	0x00000012	0	4294967295	0x00007af4	0	0	0
+0x00007f5d|vector.obj|knl_inthdr_entry18|4294967295	0x00000012	0	4294967295	0x00007bf4	0	0	0
+0x00002f4e|mailbox.obj|_tk_rcv_mbx|18	0x00000001	225	18	0x000013e0	4	4	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007366|wait.obj|_knl_gcb_make_wait|10	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x000025ed|eventflag.obj|_QueInit@1|4	0x00000011	6	4	0x000009e0	0	0	0
+0x00002cdd|mailbox.obj|_QueInit@1|4	0x00000011	6	4	0x00001108	0	0	0
+0x0000329e|memory.obj|_knl_Icalloc|10	0x00000001	36	10	0x000016fc	2	2	0x00003224|memory.obj|_knl_Imalloc|10	0x000073e8|string.obj|_knl_memset|20	0
+0x000038bf|mempool.obj|_QueInit@1|4	0x00000011	6	4	0x00001ed8	0	0	0
+0x000050d3|semaphore.obj|_tk_cre_sem|12	0x00000001	201	12	0x000038dc	6	6	0x00007cf0|int_rl78s3.obj|_disint|4	0x000000eb|_COM_sidiv.obj|__COM_sidiv|4294967295	0x00005082|semaphore.obj|_QueInit@1|4	0x000074a5|string.obj|_knl_strncpy|14	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00005512|task.obj|_QueInsert@1|10	0x00000011	25	10	0x00003cd0	0	0	0
+0x00005c60|task_manage.obj|_tk_rot_rdq|8	0x00000001	90	8	0x000047b0	6	6	0x00007cf0|int_rl78s3.obj|_disint|4	0x000057db|task_manage.obj|_knl_isTaskIndependent@1|4	0x000057b4|task.obj|_knl_rotate_ready_queue_run|4	0x000057aa|task.obj|_knl_rotate_ready_queue|4	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x000067a0|time_calls.obj|_tk_get_tim|32	0x00000001	178	32	0x00005504	5	5	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0x00006554|time_calls.obj|_knl_toSYSTIM@1|12	0x000000d8|memcpy.obj|_memcpy|4294967295	0
+0x00006a41|time_calls.obj|_tk_del_cyc|14	0x00000001	160	14	0x000058d0	4	4	0x00007cf0|int_rl78s3.obj|_disint|4	0x00006506|time_calls.obj|_QueInsert@1|10	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x000070d6|time_calls.obj|_tk_ref_alm|20	0x00000001	203	20	0x00005ee0	4	4	0x00007cf0|int_rl78s3.obj|_disint|4	0x00006565|time_calls.obj|_knl_abstim_reached@1|10	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00007281|wait.obj|_knl_wait_release_ng|8	0x00000001	37	8	0x0000626c	2	2	0x00007251|wait.obj|_knl_wait_release@1|6	0x00000000|wait.obj||4294967295	0
+0x000073ac|wait.obj|_knl_gcb_change_priority|8	0x00000001	16	8	0x000064f0	2	2	0x00007208|wait.obj|_QueRemove@1|4	0x0000721b|wait.obj|_knl_queue_insert_tpri@1|10	0
+0x000074ee|string.obj|_knl_strcmp|8	0x00000001	36	8	0x00006624	0	0	0
+0x00007547|libtm.obj|_libtm_init|4	0x00000001	3	4	0x00006664	1	1	0x00007b7d|tm_com.obj|_tm_com_init|4	0
+0x00007e4a|power_func.obj|_off_pow|4	0x00000001	1	4	0x00006f64	0	0	0
+0x00002348|cstart.obj|_start|4294967295	0x00000002	0	4294967295	0x00007954	0	0	0
+0x00007f63|vector.obj|knl_inthdr_entry21|4294967295	0x00000012	0	4294967295	0x00007a34	0	0	0
+0x00007f79|vector.obj|knl_inthdr_entry32|4294967295	0x00000012	0	4294967295	0x00007b34	0	0	0
+0x00007f7d|vector.obj|knl_inthdr_entry34|4294967295	0x00000012	0	4294967295	0x00007c34	0	0	0
+0x00007f95|vector.obj|knl_inthdr_entry46|4294967295	0x00000012	0	4294967295	0x00007db4	0	0	0
+0x00007f47|vector.obj|knl_inthdr_entry7|4294967295	0x00000012	0	4294967295	0x00007ed4	0	0	0
+0x00003ce7|mempool.obj|_tk_get_mpl|20	0x00000001	283	20	0x000024c0	8	8	0x000038e9|mempool.obj|_knl_isTaskIndependent@1|4	0x000038f7|mempool.obj|_roundSize@1|4	0x00007cf0|int_rl78s3.obj|_disint|4	0x000073bc|wait.obj|_knl_gcb_top_of_wait_queue|10	0x000039ea|mempool.obj|_knl_get_blk@1|16	0x00007366|wait.obj|_knl_gcb_make_wait|10	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00000000|libtm_printf.obj||4294967295	0x00000005	0	4294967295	0xffffffff	0	0	0
+0x00002ae7|klock.obj|_QueInsert@1|10	0x00000011	25	10	0x00000f70	0	0	0
+0x00002b00|klock.obj|_knl_ready_queue_top@1|4	0x00000011	16	4	0x00000f90	0	0	0
+0x000048c2|mutex.obj|_knl_isTaskIndependent@1|4	0x00000011	14	4	0x00003164	0	0	0
+0x0000519c|semaphore.obj|_tk_del_sem|10	0x00000001	109	10	0x000039a4	5	5	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007331|wait.obj|_knl_wait_delete|8	0x00005088|semaphore.obj|_QueInsert@1|10	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00005762|task.obj|_knl_change_task_priority|10	0x00000001	72	10	0x00003f28	4	4	0x00005590|task.obj|_knl_ready_queue_delete@1|12	0x0000553b|task.obj|_knl_ready_queue_insert@1|14	0x00005661|task.obj|_knl_reschedule@1|4	0x00000000|task.obj||4294967295	0
+0x00005a91|task_manage.obj|_tk_ext_tsk|4	0x00000001	70	4	0x00004404	6	6	0x000057db|task_manage.obj|_knl_isTaskIndependent@1|4	0x000075d3|libtm.obj|_tm_putstring|8	0x00007cf0|int_rl78s3.obj|_disint|4	0x00005a56|task_manage.obj|_knl_ter_tsk@1|6	0x000056f9|task.obj|_knl_make_dormant|4	0x00007e4b|dispatch.obj|_knl_dispatch_to_schedtsk|4294967295	0
+0x00005cc7|task_manage.obj|_tk_ref_tsk|12	0x00000001	238	12	0x00004898	5	5	0x000057db|task_manage.obj|_knl_isTaskIndependent@1|4	0x000073e8|string.obj|_knl_memset|20	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00005db5|task_manage.obj|_tk_rel_wai|8	0x00000001	120	8	0x00004944	5	5	0x000057db|task_manage.obj|_knl_isTaskIndependent@1|4	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007281|wait.obj|_knl_wait_release_ng|8	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x0000615c|task_sync.obj|_tk_wup_tsk|12	0x02688401	198	12	0x00004d8c	6	6	0x00005e33|task_sync.obj|_knl_isTaskIndependent@1|4	0x00007cf0|int_rl78s3.obj|_disint|4	0x00005e41|task_sync.obj|_knl_task_alive@1|4	0x00007262|wait.obj|_knl_wait_release_ok|6	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00006331|timer.obj|_QueInit@1|4	0x00000011	6	4	0x00004fc8	0	0	0
+0x00006586|time_calls.obj|_knl_cyc_next_time@1|16	0x00000011	167	16	0x000052fc	1	1	0x00006565|time_calls.obj|_knl_abstim_reached@1|10	0
+0x00006daf|time_calls.obj|_knl_alarmhandler_initialize|8	0x00000001	50	8	0x00005b64	2	2	0x00006500|time_calls.obj|_QueInit@1|4	0x00006506|time_calls.obj|_QueInsert@1|10	0
+0x00007242|wait.obj|_knl_make_non_wait@1|4	0x00000011	15	4	0x00006144	1	1	0x0000572e|task.obj|_knl_make_ready|8	0
+0x00007366|wait.obj|_knl_gcb_make_wait|10	0x00000001	70	10	0x0000647c	3	3	0x000072c5|wait.obj|_knl_make_wait|12	0x000071ef|wait.obj|_QueInsert@1|10	0x0000721b|wait.obj|_knl_queue_insert_tpri@1|10	0
+0x00007acb|libtm_printf.obj|_out_buf@1|12	0x00000011	50	12	0x00006a94	0	0	0
+0x00007cdc|reset_hdr.obj|_Reset_Handler|4	0x00000001	20	4	0x00006d24	2	2	0x00007bc8|start_dev.obj|_knl_startup_device|4	0x000023d5|sysinit.obj|_main|4	0
+0x00007d92|int_r5f104le.obj|_DisableInt|6	0x00000001	51	6	0x00006e14	2	2	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00007f73|vector.obj|knl_inthdr_entry29|4294967295	0x00000012	0	4294967295	0x00007d34	0	0	0
+0x00007f3f|vector.obj|knl_inthdr_entry3|4294967295	0x00000012	0	4294967295	0x00007e54	0	0	0
+0x00007f43|vector.obj|knl_inthdr_entry5|4294967295	0x00000012	0	4294967295	0x00007e94	0	0	0
+0x000063f1|timer.obj|_knl_timer_insert|12	0x00000001	64	12	0x0000509c	2	2	0x00006331|timer.obj|_QueInit@1|4	0x00006388|timer.obj|_knl_enqueue_tmeb@1|18	0
+0x00000000|time_calls.obj||4294967295	0x00000005	0	4294967295	0xffffffff	0	0	0
+0x00002ce3|mailbox.obj|_QueInsert@1|10	0x00000011	25	10	0x00001128	0	0	0
+0x000038c5|mempool.obj|_isQueEmpty@1|4	0x00000011	11	4	0x00001ef8	0	0	0
+0x0000408d|messagebuf.obj|_knl_messagebuffer_initialize|8	0x00000001	50	8	0x0000289c	2	2	0x00004034|messagebuf.obj|_QueInit@1|4	0x00004045|messagebuf.obj|_QueInsert@1|10	0
+0x000042c1|messagebuf.obj|_tk_del_mbf|14	0x00003c01	158	14	0x00002af8	6	6	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007331|wait.obj|_knl_wait_delete|8	0x00004045|messagebuf.obj|_QueInsert@1|10	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0x000032c2|memory.obj|_knl_Ifree|10	0
+0x000049e8|mutex.obj|_knl_chg_pri_mutex|16	0x00000001	189	16	0x000032a8	1	1	0x0000489e|mutex.obj|_isQueEmpty@1|4	0
+0x000058f0|task_manage.obj|_knl_del_tsk@1|6	0x00000011	45	6	0x0000418c	1	1	0x000032c2|memory.obj|_knl_Ifree|10	0
+0x000071e4|wait.obj|_isQueEmpty@1|4	0x00000011	11	4	0x000060a8	0	0	0
+0x00007cd2|interrupt.obj|_Default_Handler|4	0x00000001	10	4	0x00006ce8	1	1	0x00007ab1|libtm_printf.obj|_tm_printf|8	0
+0x00007e4b|dispatch.obj|_knl_dispatch_to_schedtsk|4294967295	0x00000002	0	4294967295	0x00007914	0	0	0
+0x00007f57|vector.obj|knl_inthdr_entry15|4294967295	0x00000012	0	4294967295	0x00007a94	0	0	0
+0x00007f5b|vector.obj|knl_inthdr_entry17|4294967295	0x00000012	0	4294967295	0x00007b74	0	0	0
+0x00006457|timer.obj|_knl_timer_insert_abs|8	0x00000001	19	8	0x00005130	1	1	0x00006388|timer.obj|_knl_enqueue_tmeb@1|18	0
+0x00000006|timer.obj|callback|0	0x59dd8c05	0	0	0x00000006	0	0	0
+0x00002453|cpuctl.obj|_tk_dis_dsp|4	0x00000001	32	4	0x00000784	1	1	0x00002445|cpuctl.obj|_knl_isTaskIndependent@1|4	0
+0x0000302f|mailbox.obj|_tk_ref_mbx|10	0x00000001	121	10	0x00001470	4	4	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007353|wait.obj|_knl_wait_tskid|6	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00003202|memory.obj|_knl_removeAreaQue|4	0x00000001	34	4	0x00001614	0	0	0
+0x000033c6|mempfix.obj|_knl_isTaskIndependent@1|4	0x00000011	14	4	0x00001924	0	0	0
+0x00003aa4|mempool.obj|_tk_cre_mpl|16	0x00000001	348	16	0x000021a0	12	12	0x000038e9|mempool.obj|_knl_isTaskIndependent@1|4	0x000038f7|mempool.obj|_roundSize@1|4	0x00003224|memory.obj|_knl_Imalloc|10	0x00007cf0|int_rl78s3.obj|_disint|4	0x000000eb|_COM_sidiv.obj|__COM_sidiv|4294967295	0x000038bf|mempool.obj|_QueInit@1|4	0x000074a5|string.obj|_knl_strncpy|14	0x000031db|memory.obj|_knl_insertAreaQue|10	0x00003950|mempool.obj|_knl_appendFreeAreaBound@1|16	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0x000032c2|memory.obj|_knl_Ifree|10	0
+0x000057e9|task_manage.obj|_tk_cre_tsk|14	0x00000001	263	14	0x000040a8	7	7	0x00003224|memory.obj|_knl_Imalloc|10	0x00007cf0|int_rl78s3.obj|_disint|4	0x000074a5|string.obj|_knl_strncpy|14	0x000056f9|task.obj|_knl_make_dormant|4	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0x000032c2|memory.obj|_knl_Ifree|10	0
+0x00005ad7|task_manage.obj|_tk_exd_tsk|4	0x00000001	70	4	0x00004504	6	6	0x000057db|task_manage.obj|_knl_isTaskIndependent@1|4	0x000075d3|libtm.obj|_tm_putstring|8	0x00007cf0|int_rl78s3.obj|_disint|4	0x00005a56|task_manage.obj|_knl_ter_tsk@1|6	0x000058f0|task_manage.obj|_knl_del_tsk@1|6	0x00007e4b|dispatch.obj|_knl_dispatch_to_schedtsk|4294967295	0
+0x00005cba|task_manage.obj|_tk_get_tid|4	0x00000001	13	4	0x00004878	0	0	0
+0x00006388|timer.obj|_knl_enqueue_tmeb@1|18	0x00000011	105	18	0x0000507c	0	0	0
+0x00006582|time_calls.obj|_knl_LeaveTaskIndependent@1|4	0x00000011	4	4	0x000052dc	0	0	0
+0x00006852|time_calls.obj|_tk_get_otm|18	0x00000001	80	18	0x000055b0	5	5	0x00007cf0|int_rl78s3.obj|_disint|4	0x00006554|time_calls.obj|_knl_toSYSTIM@1|12	0x000000d8|memcpy.obj|_memcpy|4294967295	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00007208|wait.obj|_QueRemove@1|4	0x00000011	19	4	0x000060e8	0	0	0
+0x00007251|wait.obj|_knl_wait_release@1|6	0x00000011	17	6	0x00006180	2	2	0x00007208|wait.obj|_QueRemove@1|4	0x00007242|wait.obj|_knl_make_non_wait@1|4	0
+0x0000726f|wait.obj|_knl_wait_release_ok_ercd|8	0x00000001	18	8	0x00006230	1	1	0x00007251|wait.obj|_knl_wait_release@1|6	0
+0x00007f9d|usermain_stackanalize.obj|_usermain|4	0x00000001	417	4	0x00006f84	84	84	0x000057e9|task_manage.obj|_tk_cre_tsk|14	0x0000591d|task_manage.obj|_tk_del_tsk|10	0x000059ab|task_manage.obj|_tk_sta_tsk|12	0x00005a91|task_manage.obj|_tk_ext_tsk|4	0x00005ad7|task_manage.obj|_tk_exd_tsk|4	0x00005b1d|task_manage.obj|_tk_ter_tsk|10	0x00005bb7|task_manage.obj|_tk_chg_pri|12	0x00002546|cpuctl.obj|_tk_get_reg|16	0x0000249f|cpuctl.obj|_tk_set_reg|16	0x00005cc7|task_manage.obj|_tk_ref_tsk|12	0x000060b9|task_sync.obj|_tk_slp_tsk|12	0x0000615c|task_sync.obj|_tk_wup_tsk|12	0x00006222|task_sync.obj|_tk_can_wup|8	0x00005db5|task_manage.obj|_tk_rel_wai|8	0x00005e4a|task_sync.obj|_tk_sus_tsk|14	0x00005f22|task_sync.obj|_tk_rsm_tsk|10	0x00005ff0|task_sync.obj|_tk_frsm_tsk|10	0x000062a4|task_sync.obj|_tk_dly_tsk|12	0x000050d3|semaphore.obj|_tk_cre_sem|12	0x0000519c|semaphore.obj|_tk_del_sem|10	0x00005209|semaphore.obj|_tk_sig_sem|18	0x00005378|semaphore.obj|_tk_wai_sem|22	0x00005493|semaphore.obj|_tk_ref_sem|10	0x0000265c|eventflag.obj|_tk_cre_flg|12	0x0000270b|eventflag.obj|_tk_del_flg|10	0x00002778|eventflag.obj|_tk_set_flg|20	0x00002857|eventflag.obj|_tk_clr_flg|10	0x000028c9|eventflag.obj|_tk_wai_flg|24	0x00002a01|eventflag.obj|_tk_ref_flg|10	0x00002d2e|mailbox.obj|_tk_cre_mbx|12	0x00002ddc|mailbox.obj|_tk_del_mbx|10	0x00002e49|mailbox.obj|_tk_snd_mbx|10	0x00002f4e|mailbox.obj|_tk_rcv_mbx|18	0x0000302f|mailbox.obj|_tk_ref_mbx|10	0x00004aa5|mutex.obj|_tk_cre_mtx|14	0x00004b7a|mutex.obj|_tk_del_mtx|12	0x00004c91|mutex.obj|_tk_loc_mtx|28	0x00004e71|mutex.obj|_tk_unl_mtx|18	0x00004f7f|mutex.obj|_tk_ref_mtx|10	0x00004197|messagebuf.obj|_tk_cre_mbf|16	0x000042c1|messagebuf.obj|_tk_del_mbf|14	0x00004385|messagebuf.obj|_tk_snd_mbf|22	0x000044fc|messagebuf.obj|_tk_rcv_mbf|32	0x000046f9|messagebuf.obj|_tk_ref_mbf|12	0x0000340e|mempfix.obj|_tk_cre_mpf|18	0x00003535|mempfix.obj|_tk_del_mpf|14	0x000035fd|mempfix.obj|_tk_get_mpf|20	0x0000372f|mempfix.obj|_tk_rel_mpf|12	0x0000382a|mempfix.obj|_tk_ref_mpf|12	0x00003aa4|mempool.obj|_tk_cre_mpl|16	0x00003c00|mempool.obj|_tk_del_mpl|14	0x00003ce7|mempool.obj|_tk_get_mpl|20	0x00003e02|mempool.obj|_tk_rel_mpl|18	0x00003f5c|mempool.obj|_tk_ref_mpl|14	0x00006705|time_calls.obj|_tk_set_tim|22	0x000067a0|time_calls.obj|_tk_get_tim|32	0x00006852|time_calls.obj|_tk_get_otm|18	0x0000662d|time_calls.obj|_tk_set_utc|16	0x00006699|time_calls.obj|_tk_get_utc|18	0x00006907|time_calls.obj|_tk_cre_cyc|14	0x00006a41|time_calls.obj|_tk_del_cyc|14	0x00006ae1|time_calls.obj|_tk_sta_cyc|22	0x00006c22|time_calls.obj|_tk_stp_cyc|12	0x00006cb6|time_calls.obj|_tk_ref_cyc|22	0x00006dfe|time_calls.obj|_tk_cre_alm|10	0x00006e90|time_calls.obj|_tk_del_alm|14	0x00006f30|time_calls.obj|_tk_sta_alm|22	0x00007040|time_calls.obj|_tk_stp_alm|12	0x000070d6|time_calls.obj|_tk_ref_alm|20	0x00002a7a|int.obj|_tk_def_int|14	0x00005c60|task_manage.obj|_tk_rot_rdq|8	0x00005cba|task_manage.obj|_tk_get_tid|4	0x00002453|cpuctl.obj|_tk_dis_dsp|4	0x00002473|cpuctl.obj|_tk_ena_dsp|4	0x000047ec|misc_calls.obj|_tk_ref_sys|6	0x0000500b|power.obj|_tk_set_pow|8	0x00004874|misc_calls.obj|_tk_ref_ver|4	0x00007d0b|int_r5f104le.obj|_EnableInt|12	0x00007d92|int_r5f104le.obj|_DisableInt|6	0x00007dc6|int_r5f104le.obj|_ClearInt|6	0x00007dfb|int_r5f104le.obj|_CheckInt|4	0x00007dc5|int_r5f104le.obj|_EndOfInt|4	0x00007e31|int_r5f104le.obj|_SetCpuIntLevel|4	0x00007e40|int_r5f104le.obj|_GetCpuIntLevel|4	0
+0x00007f77|vector.obj|knl_inthdr_entry31|4294967295	0x00000012	0	4294967295	0x00007ad4	0	0	0
+0x00007f7b|vector.obj|knl_inthdr_entry33|4294967295	0x00000012	0	4294967295	0x00007bb4	0	0	0
+0x00007f93|vector.obj|knl_inthdr_entry45|4294967295	0x00000012	0	4294967295	0x00007d74	0	0	0
+0x00007ab1|libtm_printf.obj|_tm_printf|10	0x00000008	26	10	0x00006a58	1	1	0x00007653|libtm_printf.obj|_tm_vsprintf@1|46	0
+0x00002c28|klock.obj|_knl_UnlockOBJ|12	0x00000001	181	12	0x0000105c	5	5	0x00007cf0|int_rl78s3.obj|_disint|4	0x00002ae7|klock.obj|_QueInsert@1|10	0x00002b00|klock.obj|_knl_ready_queue_top@1|4	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x0000340e|mempfix.obj|_tk_cre_mpf|18	0x00000001	295	18	0x0000199c	10	10	0x000033c6|mempfix.obj|_knl_isTaskIndependent@1|4	0x00003224|memory.obj|_knl_Imalloc|10	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007cfa|int_rl78s3.obj|_enaint|4	0x000032c2|memory.obj|_knl_Ifree|10	0x000000eb|_COM_sidiv.obj|__COM_sidiv|4294967295	0x00002b10|klock.obj|_knl_LockOBJ|18	0x000033a7|mempfix.obj|_QueInit@1|4	0x000074a5|string.obj|_knl_strncpy|14	0x00002c28|klock.obj|_knl_UnlockOBJ|12	0
+0x00004045|messagebuf.obj|_QueInsert@1|10	0x00000011	25	10	0x0000281c	0	0	0
+0x00004aa5|mutex.obj|_tk_cre_mtx|14	0x00000001	213	14	0x000032e4	6	6	0x00007cf0|int_rl78s3.obj|_disint|4	0x000000eb|_COM_sidiv.obj|__COM_sidiv|4294967295	0x00004898|mutex.obj|_QueInit@1|4	0x000074a5|string.obj|_knl_strncpy|14	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x000057c8|task_manage.obj|_QueRemove@1|4	0x00000011	19	4	0x00004068	0	0	0
+0x00005b1d|task_manage.obj|_tk_ter_tsk|10	0x00000001	154	10	0x00004604	6	6	0x000057db|task_manage.obj|_knl_isTaskIndependent@1|4	0x00007cf0|int_rl78s3.obj|_disint|4	0x00005a56|task_manage.obj|_knl_ter_tsk@1|6	0x000056f9|task.obj|_knl_make_dormant|4	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00006222|task_sync.obj|_tk_can_wup|8	0x00000001	130	8	0x00004e70	4	4	0x00005e33|task_sync.obj|_knl_isTaskIndependent@1|4	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00006337|timer.obj|_knl_timer_startup|4	0x00000001	76	4	0x00004fe8	3	3	0x00006331|timer.obj|_QueInit@1|4	0x00007cf0|int_rl78s3.obj|_disint|4	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00006ae1|time_calls.obj|_tk_sta_cyc|22	0x00000001	321	22	0x00005960	6	6	0x00007cf0|int_rl78s3.obj|_disint|4	0x00006565|time_calls.obj|_knl_abstim_reached@1|10	0x00006586|time_calls.obj|_knl_cyc_next_time@1|16	0x00006457|timer.obj|_knl_timer_insert_abs|8	0x00007e5d|dispatch.obj|_knl_dispatch_entry|4294967295	0x00007cfa|int_rl78s3.obj|_enaint|4	0
+0x00007afd|libtm_printf.obj|_tm_sprintf|14	0x02694008	41	14	0x00006ab4	1	1	0x00007653|libtm_printf.obj|_tm_vsprintf@1|46	0
+0x00007b26|tm_com.obj|_tm_snd_dat|6	0x00000001	31	6	0x00006af0	0	0	0
+0x00007cc1|interrupt.obj|_knl_return_inthdr|4	0x00000001	1	4	0x00006ca8	0	0	0
+0x00007e49|power_func.obj|_low_pow|4	0x00000001	1	4	0x00006f44	0	0	0
+0x00007f61|vector.obj|knl_inthdr_entry20|4294967295	0x00000012	0	4294967295	0x00007a14	0	0	0
+0x00007f87|vector.obj|knl_inthdr_entry39|4294967295	0x00000012	0	4294967295	0x00007dd4	0	0	0
+0x00006565|time_calls.obj|_knl_abstim_reached@1|10	0x00000011	25	10	0x0000529c	0	0	0
+0x000000eb|_COM_sidiv.obj|__COM_sidiv|10	0x00000102	0	10	0x000000eb	0	0	0
