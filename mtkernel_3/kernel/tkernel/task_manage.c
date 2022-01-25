@@ -233,6 +233,9 @@ SYSCALL void tk_ext_tsk( void )
 	   allocate the dummy area on the stack. */
 	volatile VB _dummy[DORMANT_STACK_SIZE];
 #endif
+#ifdef __CCRL__
+	volatile VW _dummy;
+#endif /* __CCRL__ */
 
 	/* Check context error */
 #if CHK_CTX2
@@ -257,6 +260,9 @@ SYSCALL void tk_ext_tsk( void )
 #ifdef DORMANT_STACK_SIZE
 	_dummy[0] = 0;
 #endif
+#ifdef __CCRL__
+	_dummy = 0;
+#endif /* __CCRL__ */
 }
 #endif /* USE_FUNC_TK_EXT_TSK */
 

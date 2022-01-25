@@ -76,7 +76,7 @@ SYSCALL ER tk_set_reg( ID tskid, CONST T_REGS *pk_regs, CONST T_EIT *pk_eit, CON
 	if ( tcb->state == TS_NONEXIST ) {
 		ercd = E_NOEXS;
 	} else {
-		knl_set_reg(&(tcb->tskctxb), pk_regs, pk_eit, pk_cregs);
+		knl_set_reg(tcb, pk_regs, pk_eit, pk_cregs);
 	}
 	END_CRITICAL_SECTION;
 
@@ -104,7 +104,7 @@ SYSCALL ER tk_get_reg( ID tskid, T_REGS *pk_regs, T_EIT *pk_eit, T_CREGS *pk_cre
 	if ( tcb->state == TS_NONEXIST ) {
 		ercd = E_NOEXS;
 	} else {
-		knl_get_reg(&(tcb->tskctxb), pk_regs, pk_eit, pk_cregs);
+		knl_get_reg(tcb, pk_regs, pk_eit, pk_cregs);
 	}
 	END_CRITICAL_SECTION;
 
@@ -141,7 +141,7 @@ SYSCALL ER td_set_reg( ID tskid, CONST T_REGS *regs, CONST T_EIT *eit, CONST T_C
 	if ( tcb->state == TS_NONEXIST ) {
 		ercd = E_NOEXS;
 	} else {
-		knl_set_reg((CTXB*)tcb, regs, eit, cregs);
+		knl_set_reg(tcb, regs, eit, cregs);
 	}
 	END_DISABLE_INTERRUPT;
 
@@ -170,7 +170,7 @@ SYSCALL ER td_get_reg( ID tskid, T_REGS *regs, T_EIT *eit, T_CREGS *cregs )
 	if ( tcb->state == TS_NONEXIST ) {
 		ercd = E_NOEXS;
 	} else {
-		knl_get_reg((CTXB*)tcb, regs, eit, cregs);
+		knl_get_reg(tcb, regs, eit, cregs);
 	}
 	END_DISABLE_INTERRUPT;
 

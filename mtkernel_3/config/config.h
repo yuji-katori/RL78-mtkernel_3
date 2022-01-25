@@ -51,7 +51,7 @@
 /* Version Number */
 #define CFN_VER_MAKER		0x0008
 #define CFN_VER_PRID		0x0002
-#define CFN_VER_PRVER		0
+#define CFN_VER_PRVER		0x0001
 #define CFN_VER_PRNO1		0x524C
 #define CFN_VER_PRNO2		0x3738
 #define CFN_VER_PRNO3		0x4343

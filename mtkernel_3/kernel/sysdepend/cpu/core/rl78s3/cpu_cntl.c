@@ -25,12 +25,12 @@
 /*
  * Set task register contents (Used in tk_set_reg())
  */
-EXPORT void knl_set_reg( CTXB *ctxb, CONST T_REGS *regs, CONST T_EIT *eit, CONST T_CREGS *cregs )
+EXPORT void knl_set_reg( TCB *tcb, CONST T_REGS *regs, CONST T_EIT *eit, CONST T_CREGS *cregs )
 {
 	SStackFrame	*ssp;
 	INT	i;
 
-	ssp = ctxb->ssp;
+	ssp = cregs != NULL ? cregs->sp : tcb->tskctxb.ssp;
 
 	if ( cregs != NULL ) {
 		ssp = cregs->sp;
@@ -47,7 +47,7 @@ EXPORT void knl_set_reg( CTXB *ctxb, CONST T_REGS *regs, CONST T_EIT *eit, CONST
 	}
 
 	if ( cregs != NULL ) {
-		ctxb->ssp = cregs->sp;
+		tcb->tskctxb.ssp = cregs->sp;
 	}
 }
 
@@ -56,12 +56,12 @@ EXPORT void knl_set_reg( CTXB *ctxb, CONST T_REGS *regs, CONST T_EIT *eit, CONST
 /*
  * Get task register contents (Used in tk_get_reg())
  */
-EXPORT void knl_get_reg( CTXB *ctxb, T_REGS *regs, T_EIT *eit, T_CREGS *cregs )
+EXPORT void knl_get_reg( TCB *tcb, T_REGS *regs, T_EIT *eit, T_CREGS *cregs )
 {
 	SStackFrame	*ssp;
 	INT		i;
 
-	ssp = ctxb->ssp;
+	ssp = tcb->tskctxb.ssp;
 
 	if ( regs != NULL ) {
 		for ( i = 0; i < 3; ++i ) {
@@ -75,7 +75,7 @@ EXPORT void knl_get_reg( CTXB *ctxb, T_REGS *regs, T_EIT *eit, T_CREGS *cregs )
 	}
 
 	if ( cregs != NULL ) {
-		cregs->sp = ctxb->ssp;
+		cregs->sp = tcb->tskctxb.ssp;
 	}
 }
 

@@ -105,7 +105,6 @@ struct task_control_block {
 #endif
 
 	void	*isstack;	/* stack pointer initial value */
-//	CTXB	tskctxb;	/* Task context block */
 #if USE_OBJECT_NAME
 #ifdef CLANGSPEC
 	VB	name[OBJECT_NAME_LENGTH];	/* name */
@@ -238,8 +237,8 @@ IMPORT	void	*knl_lowmem_top, *knl_lowmem_limit;
 /*
  * CPU control (cpu.c)
  */
-IMPORT void knl_set_reg( CTXB *ctxb, CONST T_REGS *regs, CONST T_EIT *eit, CONST T_CREGS *cregs );
-IMPORT void knl_get_reg( CTXB *ctxb, T_REGS *regs, T_EIT *eit, T_CREGS *cregs );
+IMPORT void knl_set_reg( TCB *tcb, CONST T_REGS *regs, CONST T_EIT *eit, CONST T_CREGS *cregs );
+IMPORT void knl_get_reg( TCB *tcb, T_REGS *regs, T_EIT *eit, T_CREGS *cregs );
 
 /*
  * Interuupt control (interrupt.c)

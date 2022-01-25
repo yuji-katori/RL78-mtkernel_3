@@ -1,4 +1,4 @@
-// CC-RL@V1.09.00 ‘Î‰ž,
+// CC-RL@V1.11.00 ‘Î‰ž,
 [Stack size settings],
 _tk_cre_tsk,48
 _tk_del_tsk,50
@@ -16,9 +16,9 @@ _tk_ter_tsk,112
 "//tcb->wspec->chg_pri_hook,sem_chg_pri,mtx_chg_pri,mbf_chg_pri,mpl_chg_pri,flg_chg_pri,mbx_chg_pri,mpf_chg_pri",
 _tk_chg_pri,88
 "//tcb->wspec->chg_pri_hook,sem_chg_pri,mtx_chg_pri,mbf_chg_pri,mpl_chg_pri,flg_chg_pri,mbx_chg_pri,mpf_chg_pri",
-_tk_get_reg,30
-_tk_set_reg,30
-_tk_ref_tsk,32
+_tk_get_reg,28
+_tk_set_reg,28
+_tk_ref_tsk,34
 ,
 _tk_slp_tsk,54
 _tk_wup_tsk,60
@@ -58,7 +58,7 @@ _tk_del_mtx,102
 "//tcb->wspec->chg_pri_hook,sem_chg_pri,mtx_chg_pri,mbf_chg_pri,mpl_chg_pri,flg_chg_pri,mbx_chg_pri,mpf_chg_pri",
 _tk_loc_mtx,102
 "//tcb->wspec->chg_pri_hook,sem_chg_pri,mtx_chg_pri,mbf_chg_pri,mpl_chg_pri,flg_chg_pri,mbx_chg_pri,mpf_chg_pri",
-_tk_unl_mtx,108
+_tk_unl_mtx,106
 "//tcb->wspec->chg_pri_hook,sem_chg_pri,mtx_chg_pri,mbf_chg_pri,mpl_chg_pri,flg_chg_pri,mbx_chg_pri,mpf_chg_pri",
 "//tcb->wspec->chg_pri_hook,sem_chg_pri,mtx_chg_pri,mbf_chg_pri,mpl_chg_pri,flg_chg_pri,mbx_chg_pri,mpf_chg_pri",
 _tk_ref_mtx,20
@@ -76,10 +76,10 @@ _tk_del_mpf,64
 _tk_get_mpf,72
 _tk_rel_mpf,50
 // __COM_sirem,(60-10)
-_tk_ref_mpf,42
+_tk_ref_mpf,40
 ,
-_tk_cre_mpl,40
-// __COM_sidiv,(50-10)
+_tk_cre_mpl,42
+// __COM_sidiv,(52-10)
 _tk_del_mpl,64
 _tk_get_mpl,72
 _tk_rel_mpl,76

@@ -3,8 +3,8 @@
 _tk_cre_tsk,48
 _tk_del_tsk,50
 _tk_sta_tsk,44
-_tk_ext_tsk,84
-// _tm_putstring,(106-22)
+_tk_ext_tsk,88
+// _tm_putstring,(110-22)
 "//tcb->wspec->rel_wai_hook,sem_rel_wai,mtx_rel_wai,mbf_rel_wai,mpl_rel_wai",
 "//tcb->wspec->chg_pri_hook,sem_chg_pri,mtx_chg_pri,mbf_chg_pri,mpl_chg_pri,flg_chg_pri,mbx_chg_pri,mpf_chg_pri",
 _tk_exd_tsk,84
@@ -76,7 +76,7 @@ _tk_del_mpf,64
 _tk_get_mpf,72
 _tk_rel_mpf,50
 // __COM_sirem,(60-10)
-_tk_ref_mpf,42
+_tk_ref_mpf,40
 ,
 _tk_cre_mpl,40
 // __COM_sidiv,(50-10)

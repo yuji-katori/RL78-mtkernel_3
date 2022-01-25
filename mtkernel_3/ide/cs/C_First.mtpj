@@ -1,9 +1,9 @@
 ﻿<CubeSuiteProject>
-  <ProductVersion>9.05.00.00</ProductVersion>
+  <ProductVersion>9.07.00.00</ProductVersion>
   <Class Guid="68f4a651-b9cd-473b-a595-b00447132ffa">
     <Instance Guid="00000000-0000-0000-0000-000000000000">
       <FormatVersion>2.0</FormatVersion>
-      <FileVersion>9.5</FileVersion>
+      <FileVersion>9.7</FileVersion>
       <ProjectGuid>360d393f-a67c-4112-8950-f73255639012</ProjectGuid>
       <ProjectItemGuid>b0f35b25-4ef3-4df4-b0b0-79d2ec13fa19</ProjectItemGuid>
       <FileCategoryGuid>cc4aebea-e90e-4d62-8ab7-a796e67dc2be</FileCategoryGuid>
@@ -1125,6 +1125,7 @@
   </Class>
   <Class Guid="fb98844b-2c27-4275-9804-f6e63e204da0">
     <Instance Guid="fb98844b-2c27-4275-9804-f6e63e204da0">
+      <TypeOfStorageOfUserSettings>UserMtudFile</TypeOfStorageOfUserSettings>
       <UseStandardLicenseOnly>True</UseStandardLicenseOnly>
       <MemoCount>0</MemoCount>
     </Instance>
@@ -1162,7 +1163,7 @@
   </Class>
   <Class Guid="1159186b-b838-4741-8324-8293bf3d5c5f">
     <Instance Guid="1159186b-b838-4741-8324-8293bf3d5c5f">
-      <DataFormatVersion>1.3</DataFormatVersion>
+      <DataFormatVersion>1.4</DataFormatVersion>
       <BuildModeCount>1</BuildModeCount>
       <BuildMode0>RABlAGYAYQB1AGwAdABCAHUAaQBsAGQA</BuildMode0>
       <BatchBuildFlag0>False</BatchBuildFlag0>
@@ -1301,6 +1302,7 @@
       <COptionISystem-DefaultValue />
       <DependencyFileExistCheckingType-DefaultValue>Rebuild</DependencyFileExistCheckingType-DefaultValue>
       <GeneralOptionErrorFileName-DefaultValue>%ProjectName%.err</GeneralOptionErrorFileName-DefaultValue>
+      <GeneralOptionLimitDevice-DefaultValue>Limit</GeneralOptionLimitDevice-DefaultValue>
       <GeneralOptionObjPath-DefaultValue>%BuildModeName%</GeneralOptionObjPath-DefaultValue>
       <HexOptionOutputFolder-DefaultValue>%BuildModeName%</HexOptionOutputFolder-DefaultValue>
       <LibOptionOutputFileName-DefaultValue>%ProjectName%.lib</LibOptionOutputFileName-DefaultValue>
@@ -1319,7 +1321,7 @@
       <LibOptionLibraryRuntime-DefaultValue>False</LibOptionLibraryRuntime-DefaultValue>
       <LinkOptionLibraryRuntime-DefaultValue>True</LinkOptionLibraryRuntime-DefaultValue>
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8585709650017857256</TimeTagModified--0>
+      <TimeTagModified--0>-8585585012209738083</TimeTagModified--0>
       <BuildMode-0>DefaultBuild</BuildMode-0>
       <Memo-0 />
       <OutputMessageFormat-0>%TargetFiles%</OutputMessageFormat-0>
@@ -1343,10 +1345,11 @@
       <LinkOptionSecurityId-0>00000000000000000000</LinkOptionSecurityId-0>
       <DependencyFileExistCheckingType-0>Rebuild</DependencyFileExistCheckingType-0>
       <GeneralOptionErrorFileName-0>%ProjectName%.err</GeneralOptionErrorFileName-0>
+      <GeneralOptionLimitDevice-0>Limit</GeneralOptionLimitDevice-0>
       <GeneralOptionObjPath-0>%BuildModeName%</GeneralOptionObjPath-0>
       <TemporaryFolder-0 />
       <GeneralOptionOtherAdditionalOptions-0 />
-      <LastCompilerVersion-0>V1.10.00</LastCompilerVersion-0>
+      <LastCompilerVersion-0>V1.11.00</LastCompilerVersion-0>
     </Instance>
     <Instance Guid="86bebc9e-2f6f-4e72-83c8-8883e6cf6d33">
       <COptionAsmPath-DefaultValue>False</COptionAsmPath-DefaultValue>
@@ -1654,7 +1657,7 @@ CS_PIN_POSAD
       <LinkOptionShowCFI-DefaultValue>False</LinkOptionShowCFI-DefaultValue>
       <LinkOptionRrmValue-DefaultValue />
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8585704415574685454</TimeTagModified--0>
+      <TimeTagModified--0>-8585584828019277703</TimeTagModified--0>
       <LinkOptionAutoSectionLayout-0>True</LinkOptionAutoSectionLayout-0>
       <LinkOptionCpu-0>False</LinkOptionCpu-0>
       <LinkOptionDebug-0>Debug</LinkOptionDebug-0>
@@ -1778,11 +1781,12 @@ _cfn_max_almid
       <HexOptionFixRecordLengthAndAlign-DefaultValue>False</HexOptionFixRecordLengthAndAlign-DefaultValue>
       <HexOptionChangeMessageWarningNumber-DefaultValue />
       <HexOptionFixRecordLengthAndAlignValue-DefaultValue>1</HexOptionFixRecordLengthAndAlignValue-DefaultValue>
-      <HexOptionByteCount-DefaultValue>False</HexOptionByteCount-DefaultValue>
       <HexOptionChangeMessageError-DefaultValue>None</HexOptionChangeMessageError-DefaultValue>
+      <HexOptionFixRecordLengthAndAlignValue2-DefaultValue>1</HexOptionFixRecordLengthAndAlignValue2-DefaultValue>
       <HexOptionVerboseCrc-DefaultValue>False</HexOptionVerboseCrc-DefaultValue>
-      <HexOptionByteCountValue-DefaultValue>FF</HexOptionByteCountValue-DefaultValue>
+      <HexOptionByteCount-DefaultValue>False</HexOptionByteCount-DefaultValue>
       <HexOptionChangeMessageErrorNumber-DefaultValue />
+      <HexOptionByteCountValue-DefaultValue>FF</HexOptionByteCountValue-DefaultValue>
       <HexOptionEndRecord-DefaultValue>None</HexOptionEndRecord-DefaultValue>
       <HexOptionS9-DefaultValue>False</HexOptionS9-DefaultValue>
       <IsLockedByUser>False</IsLockedByUser>
@@ -1814,11 +1818,12 @@ _cfn_max_almid
       <HexOptionFixRecordLengthAndAlign-0>False</HexOptionFixRecordLengthAndAlign-0>
       <HexOptionChangeMessageWarningNumber-0 />
       <HexOptionFixRecordLengthAndAlignValue-0>1</HexOptionFixRecordLengthAndAlignValue-0>
-      <HexOptionByteCount-0>False</HexOptionByteCount-0>
       <HexOptionChangeMessageError-0>None</HexOptionChangeMessageError-0>
+      <HexOptionFixRecordLengthAndAlignValue2-0>1</HexOptionFixRecordLengthAndAlignValue2-0>
       <HexOptionVerboseCrc-0>False</HexOptionVerboseCrc-0>
-      <HexOptionByteCountValue-0>FF</HexOptionByteCountValue-0>
+      <HexOptionByteCount-0>False</HexOptionByteCount-0>
       <HexOptionChangeMessageErrorNumber-0 />
+      <HexOptionByteCountValue-0>FF</HexOptionByteCountValue-0>
       <HexOptionEndRecord-0>None</HexOptionEndRecord-0>
       <HexOptionS9-0>False</HexOptionS9-0>
     </Instance>
@@ -1858,7 +1863,7 @@ _cfn_max_almid
       <LibOptionChangeMessageError-DefaultValue>None</LibOptionChangeMessageError-DefaultValue>
       <LibOptionChangeMessageErrorNumber-DefaultValue />
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8585704415574685454</TimeTagModified--0>
+      <TimeTagModified--0>-8585584828019277703</TimeTagModified--0>
       <LibOptionDebug-0>Debug</LibOptionDebug-0>
       <LibOptionForm-0>LibraryU</LibOptionForm-0>
       <LibOptionInput-0 />
@@ -2630,7 +2635,7 @@ _cfn_max_almid
       <SourceItem39-IsLockedByUser>False</SourceItem39-IsLockedByUser>
       <SourceItem39-BuildingTarget-0>True</SourceItem39-BuildingTarget-0>
       <SourceItem39-IndividualCompileOption-0>False</SourceItem39-IndividualCompileOption-0>
-      <TimeTagModified-SourceItem40--0>-8585704415574695512</TimeTagModified-SourceItem40--0>
+      <TimeTagModified-SourceItem40--0>-8585584828019277703</TimeTagModified-SourceItem40--0>
       <SourceItem40-IsLockedByUser>False</SourceItem40-IsLockedByUser>
       <SourceItem40-BuildingTarget-0>True</SourceItem40-BuildingTarget-0>
       <SourceItem40-IndividualCompileOption-0>False</SourceItem40-IndividualCompileOption-0>
