@@ -9,6 +9,8 @@
  *    Released by T-Engine Forum(http://www.t-engine.org/) at 2021/07/12.
  *
  *----------------------------------------------------------------------
+ *    Modified by Yuji Katori at 2023/1/31.
+ *----------------------------------------------------------------------
  */
 
 /*
@@ -211,7 +213,7 @@ INT knl_no_support( void *pk_para, FN fncd )
 INT callsvc( FN fncd, ... )
 {
 ER	ercd;
-#ifdef __CCRL__
+#if __CCRL__ && __RENESAS_VERSION__ < 0x01120000
 va_list	ap = 0;
 #else
 va_list	ap;
